@@ -1,10 +1,21 @@
-import Head from 'next/head'
+import Head from "next/head";
 import Layout from "../components/Layout";
+import OurStory from "./ourStory";
+import Hero from "./hero";
+import Features from "./features";
+import About from "./aboutUs";
+import Newsletter from "./newsletter";
+import Contact from "./contactUs";
 
 export default function Home() {
   return (
-   <Layout>
-       <h1>ssdadsad</h1>
-   </Layout>
-  )
+    <Layout>
+      <Hero />
+      <OurStory />
+      <Features />
+      <About />
+      <Newsletter />
+      <Contact />
+    </Layout>
+  );
 }
