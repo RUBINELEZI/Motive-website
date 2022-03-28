@@ -56,7 +56,7 @@ export default function Header() {
                     </button>
                     <button className='text-sm bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg'>
                       Sign Up
-                      <FontAwesomeIcon icon={faArrowRight} className='ml-2' />
+                      <FontAwesomeIcon icon={faArrowRight} className='ml-4' />
                     </button>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export default function Header() {
             <div className='md:hidden' id='mobile-menu'>
               <div
                 ref={ref}
-                className='px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col'>
+                className='px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center'>
                 <Link href='ourStory'>
                   <a className=' hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium'>
                     Our story
@@ -154,7 +154,7 @@ export default function Header() {
                   </button>
                   <button className='text-sm bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg'>
                     Sign Up
-                    <FontAwesomeIcon icon={faArrowRight} className='ml-2' />
+                    <FontAwesomeIcon icon={faArrowRight} className='ml-4' />
                   </button>
                 </div>
               </div>
