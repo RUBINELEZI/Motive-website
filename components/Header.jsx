@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import "font-awesome/css/font-awesome.min.css";
 import { useState } from "react";
+import { HeaderData } from "../styles/data/HeaderData";
 
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -31,41 +32,15 @@ export default function Header() {
             id="example-navbar-danger"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="nav-item">
-                <Link href="ourStory">
-                  <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
-                    <span className="ml-2">Our Story</span>
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="features">
-                  <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
-                    <span className="ml-2">Features</span>
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="aboutUs">
-                  <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
-                    <span className="ml-2">About Us</span>
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="newsletter">
-                  <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
-                    <span className="ml-2">Newsletter</span>
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="contact">
-                  <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
-                    <span className="ml-2">Contact Us</span>
-                  </a>
-                </Link>
-              </li>
+              {HeaderData.map((data) => (
+                <li key={data.index} className="nav-item">
+                  <Link href={data.link}>
+                    <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
+                      <span className="ml-2">{data.name}</span>
+                    </a>
+                  </Link>
+                </li>
+              ))}
               <div className="flex flex-col md:flex-row">
                 <button className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-500 text-purple-700 font-semibold hover:text-white py-2 px-4 border border-purple-700 hover:border-transparent rounded-lg">
                   Login
