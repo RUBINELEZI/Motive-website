@@ -23,7 +23,7 @@ export default function Header() {
               <div className="hidden md:block text-right">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-                    {HeaderData.map((data) => (
+                    {HeaderData?.map((data) => (
                       <li key={data.index} className="nav-item">
                         <Link href={data.link}>
                           <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
