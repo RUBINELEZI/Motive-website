@@ -9,13 +9,17 @@ import Contact from "./contactUs";
 
 export default function Home() {
   return (
-    <Layout>
-      <Hero />
-      <OurStory />
-      <Features />
-      <About />
-      <Newsletter />
-      <Contact />
-    </Layout>
+    <>
+      <Layout>
+        <Hero />
+        <OurStory />
+        <div className="bg-gradient-to-r from-[#343340] to-gray-800 opacity-85">
+          <Features />
+          <About />
+        </div>
+        <Newsletter />
+        <Contact />
+      </Layout>
+    </>
   );
 }

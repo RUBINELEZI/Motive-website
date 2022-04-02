@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function OurStory() {
   return (
-    <div className="container p-2 mx-auto flex flex-wrap flex-col text-white md:flex-row items-center">
+    <div className="container  md:p-10  mx-auto flex flex-wrap flex-col text-white md:flex-row items-center">
       <div className="flex flex-col w-full xl:w-1/2 justify-center lg:items-start overflow-y-hidden">
         <h1 className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
           Our <span> </span>
