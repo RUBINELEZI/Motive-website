@@ -14,7 +14,7 @@ export default function Features() {
             <div className="space-y-4">
               <Image width="50px" height="50px" src={Rectangle} />
               <h1 className="text-2xl">Feature 1</h1>
-              <p className="text-sm font-thin">
+              <p className="text-sm font-thin text-[#C4C4C4] leading-7">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
@@ -22,7 +22,7 @@ export default function Features() {
             <div className="space-y-4">
               <Image width="50px" height="50px" src={Rectangle} />
               <h1 className="text-2xl">Feature 1</h1>
-              <p className="text-sm font-thin">
+              <p className="text-sm font-thin text-[#C4C4C4] leading-7">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
@@ -40,7 +40,7 @@ export default function Features() {
             <div className="space-y-4">
               <Image width="50px" height="50px" src={Rectangle} />
               <h1 className="text-2xl">Feature 1</h1>
-              <p className="text-sm font-thin">
+              <p className="text-sm font-thin text-[#C4C4C4] leading-7">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
@@ -48,7 +48,7 @@ export default function Features() {
             <div className="space-y-4">
               <Image width="50px" height="50px" src={Rectangle} />
               <h1 className="text-2xl">Feature 1</h1>
-              <p className="text-sm font-thin">
+              <p className="text-sm font-thin text-[#C4C4C4] leading-7">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>

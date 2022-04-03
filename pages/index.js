@@ -6,6 +6,7 @@ import Features from "./features";
 import About from "./aboutUs";
 import Newsletter from "./newsletter";
 import Contact from "./contactUs";
+import Footer from "./footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         </div>
         <Newsletter />
         <Contact />
+        <Footer />
       </Layout>
     </>
   );
