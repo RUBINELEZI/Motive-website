@@ -17,7 +17,7 @@ export default function Features() {
         </div>
 
         <div className='mt-8 xl:mt-12 lg:grid lg:items-center lg:grid-cols-3'>
-          <div className='w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-right '>
+          <div className='w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-right text-center'>
             <div className='space-y-3'>
               <span className='inline-block p-3 text-purple-800 bg-blue-100 rounded-xl dark:text-white dark:bg-purple-800'>
                 <svg
@@ -85,7 +85,7 @@ export default function Features() {
             <Image src={iphone} width='300px' height='600px' />
           </div>
 
-          <div className='w-full grid grid-cols-1 gap-8 xl:gap-16 text-left'>
+          <div className='w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-left text-center'>
             <div className='space-y-3'>
               <span className='inline-block p-3 text-purple-800 bg-blue-100 rounded-xl dark:text-white dark:bg-purple-800'>
                 <svg
