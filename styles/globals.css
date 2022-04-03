@@ -5,9 +5,23 @@
 @tailwind utilities;
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #282734;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #282734;
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutUsCard:nth-child(2) {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutUsCard:nth-child(2) {
+    margin-right: 0px;
+  }
+}
+
+.newsletterIphones {
+  margin-bottom: -24px;
 }

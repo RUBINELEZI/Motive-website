@@ -19,8 +19,8 @@ export default function Contact() {
           <div className='w-full items-center flex justify-center'>
             <Image
               src={macbook}
-              width='3185px'
-              height='1920px'
+              width='1592px'
+              height='960px'
               alt='macbook'
               quality={100}
             />
