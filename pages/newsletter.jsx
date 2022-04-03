@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import iphones from '../public/images/newsletterIphones.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function Newsletter() {
   return (
-    <div className='text-white px-10 bg-gradient-to-r from-[#E8A980] to-[#6A54EF] grid lg:grid-cols-2'>
+    <div className='text-white px-10 bg-gradient-to-r from-[#E8A980] to-[#6A54EF] grid lg:grid-cols-2 z-50'>
       <div className='flex flex-row '>
-        <div className='newsletterIphones pt-36'>
+        <div className='newsletterIphones pt-36 z-0'>
           <Image
             width='682px'
             height='543px'
@@ -21,12 +23,19 @@ export default function Newsletter() {
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
         </p>
-         <div class="sm:max-w-md mb-8 sm:flex sm:items-center sm:bg-white sm:rounded-full">
-            <span class="hidden sm:inline-block pl-2 sm:pl-6 lg:pl-10">
-              <svg width="37" height="37" viewbox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18.5" cy="18.5" r="9.5" fill="#1F40FF" fill-opacity="0.15"></circle><circle cx="18.5" cy="18.5" r="18.5" fill="#1F40FF" fill-opacity="0.06"></circle><circle cx="18.5" cy="18.5" r="2.5" fill="#282C36"></circle></svg>
-            </span>
-            <button class="w-full sm:w-auto ml-auto px-10 py-5 text-white font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200">Subscribe</button>
+        <form className=''>
+          <div className='flex items-stretch mt-12 sm:max-w-md mb-8 sm:flex sm:items-center bg-[#4E4B66] rounded-xl pr-4'>
+            <input
+              className='bg-[#4E4B66] rounded-lg text-base leading-none text-white p-5 w-4/5 border border-transparent focus:outline-none'
+              type='email'
+              placeholder='Enter your email.'
+            />
+            <button className='flex w-32  bg-[#A996FF] rounded-xl text-base font-normal leading-none text-[#4E4B66] p-3 focus:outline-none'>
+              Subscribe
+              <FontAwesomeIcon icon={faArrowRight} className='ml-4' />
+            </button>
           </div>
+        </form>
       </div>
     </div>
   );
