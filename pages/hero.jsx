@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -6,7 +6,7 @@ export default function Hero() {
       <div className='flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden'>
         <h1 className='my-4 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-fuchsia-500 opacity-75 font-bold leading-tight text-center md:text-left'>
           Main Hero Message to sell yourself!
-        </h1> 
+        </h1>
         <p className='leading-normal text-base md:text-1xl mb-8 text-center md:text-left z-10 text-slate-400 font-normal'>
           Sub-hero message, not too long and not too short. Make it just right!
         </p>

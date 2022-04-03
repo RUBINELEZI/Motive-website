@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import iphone from '../public/images/featuresIphone.png';
-import Rectangle from '../public/rectangle.png';
 
 export default function Features() {
   return (
@@ -82,7 +81,13 @@ export default function Features() {
           </div>
 
           <div className='w-full items-center flex justify-center'>
-            <Image src={iphone} width='300px' height='600px' />
+            <Image
+              src={iphone}
+              width='300px'
+              height='600px'
+              alt='iphone'
+              quality={100}
+            />
           </div>
 
           <div className='w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-left text-center'>
