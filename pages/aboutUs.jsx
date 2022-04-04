@@ -8,7 +8,7 @@ export default function About() {
         </h1>
         <p className='leading-normal text-base md:text-1xl text-md mb-8 text-center md:text-left z-10 text-slate-400 font-normal'>
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book. It has survived not only
           five centuries, but also the leap into
@@ -29,10 +29,9 @@ export default function About() {
       <div className='w-full xl:w-3/5 p-12 overflow-hidden'>
         <div className='aboutUsCard p-6 m-3 max-w-sm mx-auto bg-gradient-to-r from-gray-600 to-gray-700 rounded-xl shadow-md flex items-center space-x-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60'>
           <div className='shrink-0'>
-            <img
-              className='h-12 w-12 rounded-full ring-2 ring-white'
-              src='/avatar.jpg'
-            />
+            <div className='m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-blue-500 text-xl text-white uppercase'>
+              <i className='fa fa-user'></i>
+            </div>
           </div>
           <div>
             <div className='text-xl font-medium text-white'>Ang Ganxha</div>
@@ -45,10 +44,9 @@ export default function About() {
 
         <div className='aboutUsCard p-6 m-3 max-w-sm mx-auto bg-gradient-to-r from-gray-600 to-gray-700 rounded-xl shadow-md flex items-center space-x-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60'>
           <div className='shrink-0'>
-            <img
-              className='h-12 w-12 rounded-full ring-2 ring-white'
-              src='/avatar.jpg'
-            />
+            <div className='m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-blue-500 text-xl text-white uppercase'>
+              <i className='fa fa-user'></i>
+            </div>
           </div>
           <div>
             <div className='text-xl font-medium text-white'>Ang Ganxha</div>
@@ -61,10 +59,9 @@ export default function About() {
 
         <div className='aboutUsCard p-6 m-3 max-w-sm mx-auto bg-gradient-to-r from-gray-600 to-gray-700 rounded-xl shadow-md flex items-center space-x-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60'>
           <div className='shrink-0'>
-            <img
-              className='h-12 w-12 rounded-full ring-2 ring-white'
-              src='/avatar.jpg'
-            />
+            <div className='m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-blue-500 text-xl text-white uppercase'>
+              <i className='fa fa-user'></i>
+            </div>
           </div>
           <div>
             <div className='text-xl font-medium text-white'>Ang Ganxha</div>
