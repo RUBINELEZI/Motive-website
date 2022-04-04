@@ -4,7 +4,7 @@ import Rectangle from "../public/images/featureImages/Rectangle 646.png";
 
 export default function Features() {
   return (
-    <section className='grid'>
+    <section className='grid md:p-10'>
       <div className='container px-6 py-10 mx-auto'>
         <h1 className='text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white text-center'>
           Features{' '}
@@ -82,14 +82,14 @@ export default function Features() {
           </div>
 
           <div className='w-full items-center flex justify-center'>
-            <div className="space-y-4">
+
               <img
                   className="w-96 absolute flex flex-row justify-center duration-700 ease-in-out blur-3xl  z-0"
                   src="/elipse.png"
                   alt="sadsa"
               />
               <Image src={iphone} width="300px" height="600px" />
-            </div>
+
           </div>
 
           <div className='w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-left text-center'>

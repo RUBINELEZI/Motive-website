@@ -18,18 +18,6 @@ export const HeaderData = [
   },
 
   {
-    index: 4,
-    name: "Industry Topics",
-    link: "#",
-  },
-
-  {
-    index: 5,
-    name: "For Developers",
-    link: "/developers",
-  },
-
-  {
     index: 6,
     name: "Contact Us",
     link: "/contact",
