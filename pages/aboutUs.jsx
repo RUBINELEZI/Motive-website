@@ -29,10 +29,9 @@ export default function About() {
       <div className='w-full xl:w-3/5 p-12 overflow-hidden'>
         <div className='aboutUsCard p-6 m-3 max-w-sm mx-auto bg-gradient-to-r from-gray-600 to-gray-700 rounded-xl shadow-md flex items-center space-x-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60'>
           <div className='shrink-0'>
-            <img
-              className='h-12 w-12 rounded-full ring-2 ring-white'
-              src='/avatar.jpg'
-            />
+            <div className='m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-blue-500 text-xl text-white uppercase'>
+              <i className='fa fa-user'></i>
+            </div>
           </div>
           <div>
             <div className='text-xl font-medium text-white'>Ang Ganxha</div>
@@ -45,10 +44,9 @@ export default function About() {
 
         <div className='aboutUsCard p-6 m-3 max-w-sm mx-auto bg-gradient-to-r from-gray-600 to-gray-700 rounded-xl shadow-md flex items-center space-x-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60'>
           <div className='shrink-0'>
-            <img
-              className='h-12 w-12 rounded-full ring-2 ring-white'
-              src='/avatar.jpg'
-            />
+            <div className='m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-blue-500 text-xl text-white uppercase'>
+              <i className='fa fa-user'></i>
+            </div>
           </div>
           <div>
             <div className='text-xl font-medium text-white'>Ang Ganxha</div>
@@ -61,10 +59,9 @@ export default function About() {
 
         <div className='aboutUsCard p-6 m-3 max-w-sm mx-auto bg-gradient-to-r from-gray-600 to-gray-700 rounded-xl shadow-md flex items-center space-x-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60'>
           <div className='shrink-0'>
-            <img
-              className='h-12 w-12 rounded-full ring-2 ring-white'
-              src='/avatar.jpg'
-            />
+            <div className='m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-blue-500 text-xl text-white uppercase'>
+              <i className='fa fa-user'></i>
+            </div>
           </div>
           <div>
             <div className='text-xl font-medium text-white'>Ang Ganxha</div>
