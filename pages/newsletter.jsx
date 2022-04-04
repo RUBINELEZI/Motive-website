@@ -10,7 +10,7 @@ export default function Newsletter() {
           <h1>Subscribe Newsletter</h1>
           <p className="md:w-2/3">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever
           </p>
           <form className=''>
             <div className='flex h-fit items-stretch mt-12 sm:max-w-md mb-8 sm:flex sm:items-center bg-[#4E4B66] rounded-xl pr-4'>
