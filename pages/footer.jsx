@@ -46,7 +46,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="w-full text-[#C4C4C4] flex-1 justify-around sm:flex sm:space-x-4 md:max-w-xl lg:justify-between">
+        <div className="w-full text-[#C4C4C4] flex-1 md:mt-16 justify-around sm:flex sm:space-x-4 md:max-w-xl lg:justify-between">
           <div>
               <h1>Address</h1>
               <div>

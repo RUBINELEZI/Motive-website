@@ -45,11 +45,13 @@ export default function Hero() {
         src="/elipse.png"
         alt="elipse"
       />
-      <div className="w-full xl:w-3/5 p-12 z-20 overflow-hidden">
-        <img
-          className="mx-auto w-full md:w-4/5 transform -rotate-left-6 transition hover:scale-105 duration-700 ease-in-out z-20 hover:rotate-6"
+      <div className="w-full xl:w-3/5 md:p-12 z-20 overflow-hidden">
+        <Image
+          className="mx-auto w-full md:w-4/5 h-96 transform -rotate-left-6 transition hover:scale-95 duration-700 ease-in-out z-20 hover:rotate-6"
           src="/heroIphone.png"
           alt="elipse"
+          width={800}
+          height={700}
         />
       </div>
     </div>
