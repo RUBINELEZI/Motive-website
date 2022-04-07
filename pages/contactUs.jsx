@@ -3,7 +3,7 @@ import macbook from '../public/images/macbook.png';
 
 export default function Contact() {
   return (
-    <section className='grid'>
+    <section id="contact" className='grid'>
       <div className='container px-6 py-10 mx-auto'>
         <h1 className='text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white text-center'>
           Contact us{' '}

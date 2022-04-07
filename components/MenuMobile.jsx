@@ -6,6 +6,12 @@ import { HeaderData } from "../data/HeaderData";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function MenuMobile({ isOpen }) {
+  const scrollDown = (ref) => {
+    window.scrollTo({
+      top: document.querySelector(`#${ref}`).offsetTop,
+      behavior: 'smooth',
+    });
+  };
   return (
     <Transition
       show={isOpen}
@@ -27,12 +33,10 @@ export default function MenuMobile({ isOpen }) {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               {HeaderData.map((data) => (
-                <li key={data.index} className="nav-item ">
-                  <Link href={data.link}>
+                <li key={data.index} className="nav-item" onClick={() => scrollDown(data.link)}>
                     <a className="px-3 py-2 mt-5 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
                       <span className="ml-2">{data.name}</span>
                     </a>
-                  </Link>
                 </li>
               ))}
             </ul>
