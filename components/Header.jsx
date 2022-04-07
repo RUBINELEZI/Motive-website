@@ -24,8 +24,8 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="pb-2" onClick={() => scrollDown("hero")}>
-              <Image src={logo} alt="logo" width="30" height="30" quality={100}/>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r  from-pink-500 to-purple-500 text-4xl ml-3">
+              <Image src={logo} alt="logo" width="20" height="20" quality={100}/>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r  from-pink-500 to-purple-500 text-2xl ml-3">
               MOTIVE
             </span>
             </div>
