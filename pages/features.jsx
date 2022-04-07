@@ -20,7 +20,7 @@ export default function Features() {
           <div className="w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-right text-center">
             <div className="space-y-3 md:mr-3">
               <span
-                className="inline-block p-3 text-purple-800 bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
+                className="inline-block p-3  bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -36,7 +36,7 @@ export default function Features() {
                 </svg>
               </span>
 
-              <h1 className="text-2xl font-semibold text-gray-700 capitalize text-[#fff]">
+              <h1 className="text-2xl font-semibold capitalize text-[#fff]">
                 Feature 1
               </h1>
 
@@ -49,7 +49,7 @@ export default function Features() {
 
             <div className="space-y-3 md:mr-3 mb-6">
               <span
-                className="inline-block p-3 text-purple-800 bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
+                className="inline-block p-3  bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -71,7 +71,7 @@ export default function Features() {
                 </svg>
               </span>
 
-              <h1 className="text-2xl font-semibold text-gray-700 capitalize text-[#fff]">
+              <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
                 Feature 2
               </h1>
 
@@ -97,7 +97,7 @@ export default function Features() {
           <div className="w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-left text-center">
             <div className="space-y-3 md:ml-3 mt-6">
               <span
-                className="inline-block p-3 text-purple-800 bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
+                className="inline-block p-3  bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -112,7 +112,7 @@ export default function Features() {
                   />
                 </svg>
               </span>
-              <h1 className="text-2xl font-semibold text-gray-700 capitalize text-[#fff]">
+              <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
                 Feature 3
               </h1>
               <p className="text-gray-500 text-[#f3f3f3]">
@@ -124,7 +124,7 @@ export default function Features() {
 
             <div className="space-y-3 md:ml-3">
               <span
-                className="inline-block p-3 text-purple-800 bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
+                className="inline-block p-3  bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -139,7 +139,7 @@ export default function Features() {
                   />
                 </svg>
               </span>
-              <h1 className="text-2xl font-semibold text-gray-700 capitalize text-[#fff]">
+              <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
                 Feature 4
               </h1>
               <p className="text-gray-500 text-[#f3f3f3]">
