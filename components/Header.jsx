@@ -2,12 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import "font-awesome/css/font-awesome.min.css";
 import { useState } from "react";
-import { Transition } from "@headlessui/react";
+// import { Transition } from "@headlessui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { HeaderData } from "../data/HeaderData.jsx";
 import MenuMobile from "./MenuMobile.jsx";
-import icons from "../public/images/menuMobile/icons8-menu-64.png";
+import logo from "../public/images/footer/Frame.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,25 +20,25 @@ export default function Header() {
   };
   return (
     <div>
-      <nav className="px-2 py-3 bg mb-3 font-semibold">
+      <nav className="md:px-2 mb-3 font-semibold bg-[#282734] fixed z-40 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <Link href="#">
-              <a className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">
-                MOTIVE
-              </a>
-            </Link>
+            <div className="pb-2" onClick={() => scrollDown("hero")}>
+              <Image src={logo} alt="logo" width="30" height="30" quality={100}/>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r  from-pink-500 to-purple-500 text-4xl ml-3">
+              MOTIVE
+            </span>
+            </div>
+
             <div className="flex items-center jus">
               <div className="hidden md:block text-right">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                     {HeaderData?.map((data) => (
-                      <li key={data.index} className="nav-item">
-                        <Link href={data.link}>
+                      <li key={data.index} className="nav-item cursor-pointer" onClick={() => scrollDown(data.link)}>
                           <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
                             <span className="ml-2">{data.name}</span>
                           </a>
-                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -58,19 +58,18 @@ export default function Header() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className=" inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="inline-flex items-center justify-center p-2 text-gray-400"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
-                <span className="sr-only">Open main menu</span>
-                {!isOpen ? (
+                {!isOpen && (
                   <svg
                     className="block h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    aria-hidden="true"
+                    aria-hidden="false"
                   >
                     <path
                       strokeLinecap="round"
@@ -79,14 +78,12 @@ export default function Header() {
                       d="M4 6h16M4 12h16M4 18h16"
                     />
                   </svg>
-                ) : (
-                  <Image src={icons} className="bg-transparent" />
                 )}
               </button>
             </div>
           </div>
         </div>
-        <MenuMobile isOpen={isOpen} />
+        <MenuMobile isOpen={isOpen} handleClick={() => setIsOpen(!isOpen)} />
       </nav>
     </div>
   );

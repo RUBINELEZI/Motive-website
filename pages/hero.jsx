@@ -2,11 +2,17 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="container md:p-10 p-4  mx-auto flex flex-wrap  flex-col md:flex-row items-center">
+    <div id="hero" className="container md:p-10 p-4  mx-auto flex flex-wrap  flex-col md:flex-row items-center">
       <div className="flex flex-col w-full z-20 xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
         <h1 className="my-4 text-3xl mt-16 md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-red-200 to-fuchsia-700 opacity-75 font-bold leading-tight text-center md:text-left">
           Main Hero Message to sell yourself!
         </h1>
+
+        <div className="flex items-center justify-center mb-4">
+          <span className="inline-block w-40 h-1 rounded-full bg-purple-800"/>
+          <span className="inline-block w-3 h-1 ml-1 rounded-full bg-purple-800"/>
+          <span className="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800"/>
+        </div>
         <p className="leading-normal text-base md:text-1xl mb-8 text-center md:text-left z-10 text-slate-400 font-normal">
           Sub-hero message, not too long and not too short. Make it just right!
         </p>
@@ -26,7 +32,7 @@ export default function Hero() {
 
           <div className="flex items-center justify-between pt-4">
             <button
-              className="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+              className="bg-purple-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
               type="button"
             >
               Sign Up
@@ -45,11 +51,13 @@ export default function Hero() {
         src="/elipse.png"
         alt="elipse"
       />
-      <div className="w-full xl:w-3/5 p-12 z-20 overflow-hidden">
-        <img
-          className="mx-auto w-full md:w-4/5 transform -rotate-left-6 transition hover:scale-105 duration-700 ease-in-out z-20 hover:rotate-6"
+      <div className="w-full xl:w-3/5 md:p-12 z-20 overflow-hidden">
+        <Image
+          className="mx-auto w-full md:w-4/5 h-96 transform -rotate-left-6 transition hover:scale-95 duration-700 ease-in-out z-20 hover:rotate-6"
           src="/heroIphone.png"
           alt="elipse"
+          width={800}
+          height={700}
         />
       </div>
     </div>

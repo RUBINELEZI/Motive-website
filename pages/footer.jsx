@@ -5,12 +5,12 @@ import facebook from "../public/images/footer/facebook.png";
 
 export default function Footer() {
   return (
-    <div className="bg-bckg-gray w-full px-4 pt-10 pb-7 xl:px-[160px]">
+    <div className="bg-gray  w-full px-4 pt-10 pb-7 xl:px-[160px]">
       <div className="flex w-full flex-col justify-around md:flex-row md:space-x-6 xl:justify-between">
         <div className="mb-7 sm:self-center sm:text-center md:text-left">
           <div className="pb-2">
             <Image src={logo} alt="logo" width="40" height="40" />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500 text-4xl ml-3">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r  from-pink-500 to-purple-500 text-4xl ml-3">
               MOTIVE
             </span>
           </div>
@@ -46,7 +46,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="w-full text-[#C4C4C4] flex-1 justify-around sm:flex sm:space-x-4 md:max-w-xl lg:justify-between">
+        <div className="w-full text-[#C4C4C4] flex-1 md:mt-16 justify-around sm:flex sm:space-x-4 md:max-w-xl lg:justify-between">
           <div>
               <h1>Address</h1>
               <div>
