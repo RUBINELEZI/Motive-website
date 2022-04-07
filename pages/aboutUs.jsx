@@ -1,11 +1,18 @@
 export default function About() {
   return (
-    <div className='container p-4 md:p-0 mx-auto flex flex-wrap flex-col md:flex-row h-full items-center '>
-      <div className='bg-gradient-to-r from-gray-600 to-gray-700 w-full md:h-fit h- absolute m-0 opacity-50 left-0'></div>
+    <div className='container p-4 mx-auto flex flex-wrap flex-col md:flex-row h-full items-center '>
+      <div className="bg-gradient-to-r from-gray-600 to-gray-700 w-full md:h-fit h- absolute m-0 opacity-50 left-0"/>
       <div className='flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden'>
-        <h1 className='my-4 text-2xl md:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-fuchsia-500 opacity-75 font-bold leading-tight text-center md:text-left'>
+        <h1 className='text-3xl font-semibold text-gray-800 capitalize lg:text-4xl text-[#fff] text-center mb-2'>
           About US
         </h1>
+
+        <div className="flex items-center justify-center mb-2">
+          <span className="inline-block w-40 h-1 rounded-full bg-purple-800"/>
+          <span className="inline-block w-3 h-1 ml-1 rounded-full bg-purple-800"/>
+          <span className="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800"/>
+        </div>
+
         <p className='leading-normal text-base md:text-1xl text-md mb-8 text-center md:text-left z-10 text-slate-400 font-normal'>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever

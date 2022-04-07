@@ -7,6 +7,12 @@ export default function Hero() {
         <h1 className="my-4 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-red-200 to-fuchsia-700 opacity-75 font-bold leading-tight text-center md:text-left">
           Main Hero Message to sell yourself!
         </h1>
+
+        <div className="flex items-center justify-center mb-4">
+          <span className="inline-block w-40 h-1 rounded-full bg-purple-800"/>
+          <span className="inline-block w-3 h-1 ml-1 rounded-full bg-purple-800"/>
+          <span className="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800"/>
+        </div>
         <p className="leading-normal text-base md:text-1xl mb-8 text-center md:text-left z-10 text-slate-400 font-normal">
           Sub-hero message, not too long and not too short. Make it just right!
         </p>

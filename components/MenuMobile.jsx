@@ -18,7 +18,7 @@ export default function MenuMobile({ isOpen }) {
     >
       {(ref) => (
         <div
-          className=" fixed top-0 z-50 flex h-screen w-screen  flex-col items-center   bg-[#282734] md:hidden"
+          className="fixed top-0 z-50 flex h-screen w-screen flex-col items-center bg-[#282734] md:hidden"
           id="mobile-menu"
         >
           <div
@@ -29,7 +29,8 @@ export default function MenuMobile({ isOpen }) {
               {HeaderData.map((data) => (
                 <li key={data.index} className="nav-item ">
                   <Link href={data.link}>
-                    <a className="px-3 py-2 mt-5 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
+                    <a
+                      className="px-3 py-2 mt-5 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
                       <span className="ml-2">{data.name}</span>
                     </a>
                   </Link>
@@ -37,10 +38,12 @@ export default function MenuMobile({ isOpen }) {
               ))}
             </ul>
             <div className="flex flex-col md:flex-row">
-              <button className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-500 text-purple-700 font-semibold hover:text-white py-2 px-4 border border-purple-700 hover:border-transparent rounded-lg">
+              <button
+                className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-500 text-purple-700 font-semibold hover:text-white py-2 px-4 border border-purple-700 hover:border-transparent rounded-lg">
                 Login
               </button>
-              <button className="text-sm mt-5 bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+              <button
+                className="text-sm mt-5 bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
                 Sign Up
                 <FontAwesomeIcon icon={faArrowRight} className="ml-4" />
               </button>

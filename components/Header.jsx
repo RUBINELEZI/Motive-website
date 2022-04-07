@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import "font-awesome/css/font-awesome.min.css";
 import { useState } from "react";
-import { Transition } from "@headlessui/react";
+// import { Transition } from "@headlessui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { HeaderData } from "../data/HeaderData.jsx";
@@ -13,7 +13,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="px-2 py-3 bg mb-3 font-semibold">
+      <nav className="px-2 py-3 mb-3 font-semibold">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link href="#">
@@ -73,7 +73,7 @@ export default function Header() {
                     />
                   </svg>
                 ) : (
-                  <Image src={icons} className="bg-transparent" />
+                  <Image src={icons} className="bg-transparent" alt='navbar'/>
                 )}
               </button>
             </div>
