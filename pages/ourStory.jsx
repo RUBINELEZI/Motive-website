@@ -1,7 +1,7 @@
 import Image from 'next/image';
 export default function OurStory() {
   return (
-    <div className='container  md:p-10 p-4 mx-auto flex flex-wrap flex-col text-white md:flex-row items-center'>
+    <div id="ourStory" className=' container  md:p-10 p-4 mx-auto flex flex-wrap flex-col text-white md:flex-row items-center'>
       <div className='flex flex-col w-full xl:w-1/2 justify-center lg:items-start overflow-y-hidden'>
         <div className='mb-10'>
           <h1 className='text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white text-center'>

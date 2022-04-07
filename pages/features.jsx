@@ -4,7 +4,7 @@ import Rectangle from "../public/images/featureImages/Rectangle 646.png";
 
 export default function Features() {
   return (
-    <section className='grid md:p-10'>
+    <section id="features" className='grid md:p-10'>
       <div className='container px-6 py-10 mx-auto'>
         <h1 className='text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white text-center'>
           Features{' '}

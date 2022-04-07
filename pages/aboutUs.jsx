@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className='container p-4 md:p-0 mx-auto flex flex-wrap flex-col md:flex-row h-full items-center '>
+    <div id="aboutUs" className='container p-4 md:p-0 mx-auto flex flex-wrap flex-col md:flex-row h-full items-center '>
       <div className='bg-gradient-to-r from-gray-600 to-gray-700 w-full md:h-fit h- absolute m-0 opacity-50 left-0'></div>
       <div className='flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden'>
         <h1 className='my-4 text-2xl md:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-fuchsia-500 opacity-75 font-bold leading-tight text-center md:text-left'>

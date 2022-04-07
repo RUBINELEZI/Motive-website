@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="mb-7 sm:self-center sm:text-center md:text-left">
           <div className="pb-2">
             <Image src={logo} alt="logo" width="40" height="40" />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500 text-4xl ml-3">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r  from-pink-500 to-purple-500 text-4xl ml-3">
               MOTIVE
             </span>
           </div>
