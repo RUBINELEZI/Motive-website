@@ -11,6 +11,13 @@ import icons from "../public/images/menuMobile/icons8-menu-64.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const scrollDown = (ref) => {
+    window.scrollTo({
+      top: document.querySelector(`#${ref}`).offsetTop - 20,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div>
       <nav className="px-2 py-3 bg mb-3 font-semibold">

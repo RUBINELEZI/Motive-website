@@ -5,7 +5,15 @@ import Link from "next/link";
 import { HeaderData } from "../data/HeaderData";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-export default function MenuMobile({ isOpen }) {
+export default function MenuMobile({ isOpen, handleClick }) {
+  const scrollDown = (ref) => {
+    window.scrollTo({
+      top: document.querySelector(`#${ref}`).offsetTop - 64,
+      behavior: 'smooth',
+    });
+
+    handleClick();
+  };
   return (
     <Transition
       show={isOpen}
