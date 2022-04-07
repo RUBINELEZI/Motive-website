@@ -5,7 +5,7 @@ import facebook from "../public/images/footer/facebook.png";
 
 export default function Footer() {
   return (
-    <div className="bg-bckg-gray w-full px-4 pt-10 pb-7 xl:px-[160px]">
+    <div className="bg-gray  w-full px-4 pt-10 pb-7 xl:px-[160px]">
       <div className="flex w-full flex-col justify-around md:flex-row md:space-x-6 xl:justify-between">
         <div className="mb-7 sm:self-center sm:text-center md:text-left">
           <div className="pb-2">
