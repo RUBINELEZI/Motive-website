@@ -8,30 +8,38 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { HeaderData } from "../data/HeaderData.jsx";
 import MenuMobile from "./MenuMobile.jsx";
 import icons from "../public/images/menuMobile/icons8-menu-64.png";
+import logo from "../public/images/footer/Frame.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const scrollDown = (ref) => {
+    window.scrollTo({
+      top: document.querySelector(`#${ref}`).offsetTop,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div>
-      <nav className="px-2 py-3 mb-3 font-semibold">
+      <nav className="md:px-2 md:py-3  mb-3 font-semibold">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <Link href="#">
-              <a className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">
-                MOTIVE
-              </a>
-            </Link>
+            <div className="pb-2" onClick={() => scrollDown("hero")}>
+              <Image src={logo} alt="logo" width="30" height="30" quality={100}/>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r  from-pink-500 to-purple-500 text-4xl ml-3">
+              MOTIVE
+            </span>
+            </div>
+
             <div className="flex items-center jus">
               <div className="hidden md:block text-right">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                     {HeaderData?.map((data) => (
-                      <li key={data.index} className="nav-item">
-                        <Link href={data.link}>
+                      <li key={data.index} className="nav-item cursor-pointer" onClick={() => scrollDown(data.link)}>
                           <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
                             <span className="ml-2">{data.name}</span>
                           </a>
-                        </Link>
                       </li>
                     ))}
                   </ul>

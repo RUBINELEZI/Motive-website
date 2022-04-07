@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="container md:p-10 p-4  mx-auto flex flex-wrap  flex-col md:flex-row items-center">
+    <div id="hero" className="container md:p-10 p-4  mx-auto flex flex-wrap  flex-col md:flex-row items-center">
       <div className="flex flex-col w-full z-20 xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
         <h1 className="my-4 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-red-200 to-fuchsia-700 opacity-75 font-bold leading-tight text-center md:text-left">
           Main Hero Message to sell yourself!
@@ -51,11 +51,13 @@ export default function Hero() {
         src="/elipse.png"
         alt="elipse"
       />
-      <div className="w-full xl:w-3/5 p-12 z-20 overflow-hidden">
-        <img
-          className="mx-auto w-full md:w-4/5 transform -rotate-left-6 transition hover:scale-105 duration-700 ease-in-out z-20 hover:rotate-6"
+      <div className="w-full xl:w-3/5 md:p-12 z-20 overflow-hidden">
+        <Image
+          className="mx-auto w-full md:w-4/5 h-96 transform -rotate-left-6 transition hover:scale-95 duration-700 ease-in-out z-20 hover:rotate-6"
           src="/heroIphone.png"
           alt="elipse"
+          width={800}
+          height={700}
         />
       </div>
     </div>

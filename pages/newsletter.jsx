@@ -5,7 +5,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Newsletter() {
   return (
-    <div className="text-white px-10 bg-gradient-to-r from-[#E8A980] to-[#6A54EF] grid lg:grid-cols-2 z-50">
+    <div id="newsletter" className="text-white px-10 bg-gradient-to-r from-[#E8A980] to-[#6A54EF] grid lg:grid-cols-2 z-50">
       <div className="flex flex-col justify-center mt-9">
         <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl text-[#fff]">Subscribe
           Newsletter

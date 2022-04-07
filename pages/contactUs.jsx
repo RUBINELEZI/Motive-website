@@ -3,7 +3,7 @@ import macbook from "../public/images/macbook.png";
 
 export default function Contact() {
   return (
-    <section className="grid ">
+    <section id="contact" className="grid ">
       <div className="container px-6 py-10 mx-auto">
         <div className="mt-8 xl:mt-12 ">
           <div className="lg:grid lg:grid-cols-2 flex flex-col items-center justify-center">
