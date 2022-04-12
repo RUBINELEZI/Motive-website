@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,11 +17,16 @@ body {
 
 @media only screen and (max-width: 768px) {
   .aboutUsCard:nth-child(2) {
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 
 
 .newsletterIphones {
-    margin-bottom: -24px;
+    margin-bottom: -28px;
+    z-index: 0;
+}
+
+#contact {
+  z-index: 10;
 }

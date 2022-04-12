@@ -11,7 +11,7 @@ export default function Layout({ title, keywords, description, children }) {
         <meta name="keywords" content={keywords} />
       </Head>
       <Header />
-      <div>{children}</div>
+      <div className="leading-loose font-light">{children}</div>
       {/*<Footer />*/}
     </div>
   );
