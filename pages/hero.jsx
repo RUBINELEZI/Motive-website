@@ -1,5 +1,7 @@
 import Image from "next/image";
 import iphone from "../public/images/sharedImages/iphone.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Hero() {
   return (
@@ -22,6 +24,16 @@ export default function Hero() {
           industry. Lorem Ipsum has been the industry standard dummy text ever
           since the 1500s,{" "}
         </p>
+
+        <div className="flex flex-col md:flex-row mb-10">
+          <button className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+            Sign Up
+          </button>
+          <button className="text-sm bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+            Log In
+            <FontAwesomeIcon icon={faArrowRight} className="ml-4" />
+          </button>
+        </div>
 
         {/*<form className="bg-gray-900  opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4 z-10">*/}
         {/*  <div className="mb-4">*/}

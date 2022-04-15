@@ -46,14 +46,11 @@ export default function MenuMobile({ isOpen, handleClick }) {
               ))}
             </ul>
             <div className="flex flex-col md:flex-row">
-              <button
-                className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-500 text-purple-700 font-semibold hover:text-white py-2 px-4 border border-purple-700 hover:border-transparent rounded-lg">
-                Login
+              <button className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent border-b-4 border-b-purple-500 hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+                Motive Creator Labs
               </button>
-              <button
-                className="text-sm mt-5 bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
-                Sign Up
-                <FontAwesomeIcon icon={faArrowRight} className="ml-4" />
+              <button className="text-sm bg-purple-400 hover:bg-purple-500 border-b-4 border-b-purple-600 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+                Motive For Business
               </button>
             </div>
           </div>

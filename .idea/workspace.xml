@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4ec9ba7-5c95-42c4-b820-c4a4329aec74" name="Changes" comment="fix">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MenuMobile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MenuMobile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/newsletter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/newsletter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ourStory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ourStory.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eda51390-b265-4503-b9bb-5498e9f434cd" name="Changes" comment="" />
+      <changelist id="c4ec9ba7-5c95-42c4-b820-c4a4329aec74" name="Changes" comment="fix" />
       <created>1649076400730</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -105,6 +102,9 @@
       <workItem from="1649171321966" duration="28000" />
       <workItem from="1649316934524" duration="8998000" />
       <workItem from="1649334778031" duration="2648000" />
+      <workItem from="1649948525688" duration="51000" />
+      <workItem from="1649948578405" duration="888000" />
+      <workItem from="1650011937155" duration="2711000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1649337961223</created>

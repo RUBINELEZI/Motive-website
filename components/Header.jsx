@@ -20,7 +20,7 @@ export default function Header() {
   };
   return (
     <div>
-      <nav className="md:px-2 mb-3 font-semibold bg-[#282734] fixed z-40 w-full">
+      <nav className="md:px-2 mb-3 font-semibold bg-[#282734] fixed z-40 w-full md:">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="pb-2" onClick={() => scrollDown("hero")}>
@@ -32,7 +32,7 @@ export default function Header() {
 
             <div className="flex items-center jus">
               <div className="hidden md:block text-right">
-                <div className="ml-10 flex items-baseline space-x-4">
+                <div className=" flex items-baseline space-x-4">
                   <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                     {HeaderData?.map((data) => (
                       <li key={data.index} className="nav-item cursor-pointer" onClick={() => scrollDown(data.link)}>
@@ -43,12 +43,11 @@ export default function Header() {
                     ))}
                   </ul>
                   <div className="flex flex-col md:flex-row">
-                    <button className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-500 text-purple-700 font-semibold hover:text-white py-2 px-4 border border-purple-700 hover:border-transparent rounded-lg">
-                      Login
+                    <button className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent border-b-4 border-b-purple-500 hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+                      Motive Creator Labs
                     </button>
-                    <button className="text-sm bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
-                      Sign Up
-                      <FontAwesomeIcon icon={faArrowRight} className="ml-4" />
+                    <button className="text-sm bg-purple-400 hover:bg-purple-500 border-b-4 border-b-purple-600 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+                      Motive For Business
                     </button>
                   </div>
                 </div>
