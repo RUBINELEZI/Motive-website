@@ -150,6 +150,32 @@ export default function Features() {
             </div>
           </div>
         </div>
+        <div className="flex flex-col items-center text-center mt-6 space-y-3 md:ml-3">
+              <span
+                className="inline-block p-3  bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                  />
+                </svg>
+              </span>
+          <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
+            Feature 5
+          </h1>
+          <p className="text-gray-500 text-[#f3f3f3]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Provident ab nulla quod dignissimos vel non corrupti doloribus
+            voluptatum eveniet
+          </p>
+        </div>
       </div>
     </section>
   );
