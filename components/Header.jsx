@@ -2,9 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import "font-awesome/css/font-awesome.min.css";
 import { useState } from "react";
-// import { Transition } from "@headlessui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { HeaderData } from "../data/HeaderData.jsx";
 import MenuMobile from "./MenuMobile.jsx";
 import logo from "../public/images/footer/Frame.png";
@@ -20,11 +17,11 @@ export default function Header() {
   };
   return (
     <div>
-      <nav className="md:px-2 mb-3 font-semibold bg-[#282734] fixed z-40 w-full md:">
+      <nav className="md:px-2 mb-3 font-semibold bg-[#282734] backdrop-filter backdrop-blur-lg bg-opacity-50 fixed top-0 z-50 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="pb-2" onClick={() => scrollDown("hero")}>
-              <Image src={logo} alt="logo" width="20" height="20" quality={100}/>
+              {/* <Image src={logo} alt="logo" width="20" height="20" quality={100}/> */}
               <span className="bg-clip-text text-transparent bg-gradient-to-r  from-pink-500 to-purple-500 text-2xl ml-3">
               MOTIVE
             </span>

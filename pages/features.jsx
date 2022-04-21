@@ -1,12 +1,35 @@
 import Image from "next/image";
 import iphone from "../public/images/sharedImages/iphone.png";
-// import Rectangle from "../public/images/featureImages/Rectangle 646.png";
+import mockup from '../public/mockup.jpg';
 
 export default function Features() {
+  const featureSlides = [
+    {
+      name: "feature 1",
+      src: {mockup}
+    },
+    {
+      name: "feature 2",
+      src: {mockup}
+    },
+    {
+      name: "feature 3",
+      src: {mockup}
+    },
+    {
+      name: "feature 4",
+      src: {mockup}
+    },
+    {
+      name: "feature 5",
+      src: {mockup}
+    }
+  ];
+
   return (
     <section id="features" className="grid md:p-10">
       <div className="container px-6 py-10 mx-auto">
-        <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl text-[#fff] text-center">
+        <h1 className="text-3xl font-semibold capitalize lg:text-4xl text-[#fff] text-center">
           Features{" "}
         </h1>
 
@@ -20,7 +43,7 @@ export default function Features() {
           <div className="w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-right text-center">
             <div className="space-y-3 md:mr-3">
               <span
-                className="inline-block p-3  bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
+                className="inline-block p-3  rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -40,7 +63,7 @@ export default function Features() {
                 Feature 1
               </h1>
 
-              <p className="text-gray-500 text-[#f3f3f3]">
+              <p className="text-gray-400 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Provident ab nulla quod dignissimos vel non corrupti doloribus
                 voluptatum eveniet
@@ -49,7 +72,7 @@ export default function Features() {
 
             <div className="space-y-3 md:mr-3 mb-6">
               <span
-                className="inline-block p-3  bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
+                className="inline-block p-3 rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -75,7 +98,7 @@ export default function Features() {
                 Feature 2
               </h1>
 
-              <p className="text-gray-500 text-[#f3f3f3]">
+              <p className="text-gray-400 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Provident ab nulla quod dignissimos vel non corrupti doloribus
                 voluptatum eveniet
@@ -84,20 +107,23 @@ export default function Features() {
           </div>
 
           <div className="w-full items-center flex justify-center">
-
             <img
-              className="w-96 absolute flex flex-row justify-center duration-700 ease-in-out blur-3xl  z-0"
+              className="w-96 absolute flex flex-row justify-center duration-700 ease-in-out blur-3xl z-0"
               src="/elipse.png"
               alt="sadsa"
             />
-            <Image src={iphone} width="300px" height="600px" alt='iphone'/>
-
+            {/* <Image src={iphone} width="300px" height="600px" alt='iphone'/> */}
+            <div className="border-[12px] rounded-[42px] border-slate-600 border-opacity-20">
+              <div className="w-[300px] h-[600px]">
+                <Image src={mockup} width={300} height={600} alt='mockup' className="rounded-[32px] object-cover"/>
+              </div>
+            </div>
           </div>
 
           <div className="w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-left text-center">
             <div className="space-y-3 md:ml-3 mt-6">
               <span
-                className="inline-block p-3  bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
+                className="inline-block p-3   rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -115,7 +141,7 @@ export default function Features() {
               <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
                 Feature 3
               </h1>
-              <p className="text-gray-500 text-[#f3f3f3]">
+              <p className="text-gray-400 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Provident ab nulla quod dignissimos vel non corrupti doloribus
                 voluptatum eveniet
@@ -124,7 +150,7 @@ export default function Features() {
 
             <div className="space-y-3 md:ml-3">
               <span
-                className="inline-block p-3  bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
+                className="inline-block p-3   rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -142,7 +168,7 @@ export default function Features() {
               <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
                 Feature 4
               </h1>
-              <p className="text-gray-500 text-[#f3f3f3]">
+              <p className="text-gray-400 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Provident ab nulla quod dignissimos vel non corrupti doloribus
                 voluptatum eveniet
@@ -152,7 +178,7 @@ export default function Features() {
         </div>
         <div className="flex flex-col items-center text-center mt-6 space-y-3 md:ml-3">
               <span
-                className="inline-block p-3  bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
+                className="inline-block p-3   rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -170,7 +196,7 @@ export default function Features() {
           <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
             Feature 5
           </h1>
-          <p className="text-gray-500 text-[#f3f3f3]">
+          <p className="text-gray-400 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Provident ab nulla quod dignissimos vel non corrupti doloribus
             voluptatum eveniet
