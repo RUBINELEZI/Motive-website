@@ -22,7 +22,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-16">
             <div className="pb-2" onClick={() => scrollDown("hero")}>
               {/* <Image src={logo} alt="logo" width="20" height="20" quality={100}/> */}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r  from-pink-500 to-purple-500 text-2xl ml-3">
+              <span className="bg-clip-text cursor-pointer text-transparent bg-gradient-to-r  from-pink-500 to-purple-500 text-2xl ml-3">
               MOTIVE
             </span>
             </div>
@@ -33,17 +33,17 @@ export default function Header() {
                   <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                     {HeaderData?.map((data) => (
                       <li key={data.index} className="nav-item cursor-pointer" onClick={() => scrollDown(data.link)}>
-                          <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
+                          <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400 hover:underline hover:underline-offset-4">
                             <span className="ml-2">{data.name}</span>
                           </a>
                       </li>
                     ))}
                   </ul>
                   <div className="flex flex-col md:flex-row">
-                    <button className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent border-b-4 border-b-purple-500 hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+                    <button className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
                       Motive Creator Labs
                     </button>
-                    <button className="text-sm bg-purple-400 hover:bg-purple-500 border-b-4 border-b-purple-600 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+                    <button className="text-sm bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
                       Motive For Business
                     </button>
                   </div>
