@@ -5,6 +5,12 @@ import facebook from '../public/images/footer/facebook.png';
 import { HeaderData } from "../data/HeaderData.jsx";
 
 export default function Footer() {
+  const scrollDown = (ref) => {
+    window.scrollTo({
+      top: document.querySelector(`#${ref}`).offsetTop - 20,
+      behavior: 'smooth',
+    });
+  };
   return (
     <footer className='lg:text-left p-12 text-gray-400 flex flex-col bg-gradient-to-r from-[#343340] to-gray-800 opacity-85 ' >
       <div className='flex justify-center items-center lg:justify-between p-6 border-b border-gray-300 '>
@@ -105,10 +111,7 @@ export default function Footer() {
         </div>
       </div>
       <div className='mx-6 py-10 text-center md:text-left' >
-        <div className='flex flex-col align-baseline md:flex-row justify-between' style={{
-          display: 'flex',
-          alignItems: 'baseline'
-      }}>
+        <div className='flex flex-col align-baseline md:flex-row justify-between'>
           <div className='md:w-1/3 mb-12'>
             <h6
               className='
@@ -131,24 +134,18 @@ export default function Footer() {
             <h6 className='uppercase font-semibold mb-4 flex justify-center md:justify-start'>
               Navigation
             </h6>
-            <p className='flex items-center justify-center md:justify-start mb-4'>
-              Our story
-            </p>
-            <p className='flex items-center justify-center md:justify-start mb-4'>
-Features
-            </p>
-            <p className='flex items-center justify-center md:justify-start mb-4'>
-              About us
-            </p>
-            <p className='flex items-center justify-center md:justify-start mb-4'>
-             Newsletter
-            </p>
-            <p className='flex items-center justify-center md:justify-start'>
-             Contact us
-            </p>
+            <ul className="flex flex-col list-none justify-center items-center md:items-start">
+                    {HeaderData?.map((data) => (
+                      <li key={data.index} className="nav-item cursor-pointer" onClick={() => scrollDown(data.link)}>
+                          <a className="py-2 flex items-center uppercase leading-snug hover:text-purple-400 hover:underline hover:underline-offset-4">
+                            <span className="">{data.name}</span>
+                          </a>
+                      </li>
+                    ))}
+                  </ul>
           </div>
           <div className=''>
-            <h6 className='uppercase font-semibold mt-10 mb-4 flex justify-center md:justify-start'>
+            <h6 className='uppercase font-semibold mt-10 md:mt-0 mb-4 flex justify-center md:justify-start'>
               Contact
             </h6>
             <p className='flex justify-center md:justify-start mb-4'>
@@ -226,6 +223,6 @@ Features
           All right reserved
         </a>
       </div>
-    </footer>
+     </footer>
   );
 }
