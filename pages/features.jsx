@@ -3,29 +3,6 @@ import iphone from "../public/images/sharedImages/iphone.png";
 import mockup from '../public/mockup.jpg';
 
 export default function Features() {
-  const featureSlides = [
-    {
-      name: "feature 1",
-      src: {mockup}
-    },
-    {
-      name: "feature 2",
-      src: {mockup}
-    },
-    {
-      name: "feature 3",
-      src: {mockup}
-    },
-    {
-      name: "feature 4",
-      src: {mockup}
-    },
-    {
-      name: "feature 5",
-      src: {mockup}
-    }
-  ];
-
   return (
     <section id="features" className="grid md:p-10">
       <div className="container px-6 py-10 mx-auto">
