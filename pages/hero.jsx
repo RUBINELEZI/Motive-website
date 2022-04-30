@@ -4,12 +4,16 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Hero() {
   return (
+
     <div
       id="hero"
       className="container md:p-10 p-4 mx-auto flex flex-wrap  flex-col md:flex-row items-center"
     >
-      <div className="flex flex-col w-full z-20 xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
-        <h1 className="mt-16 mb-4 text-3xl mt-16 md:text-5xl text-white font-semibold text-center md:text-left">
+
+      <div
+        className="flex flex-col w-full z-20 xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+        <h1
+          className="mt-16 mb-4 text-3xl mt-16 md:text-5xl text-white font-semibold text-center lg:text-left">
           Main Hero Message to sell yourself!
         </h1>
 
@@ -19,13 +23,13 @@ export default function Hero() {
           <span className="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800" />
         </div>
         <p
-          className="leading-normal text-base md:text-1xl mb-8 text-center md:text-left z-10 text-slate-400 font-normal">
+          className="leading-normal text-base md:text-1xl mb-8 text-center lg:text-left z-10 text-slate-400 font-normal">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry standard dummy text ever
           since the 1500s,{" "}
         </p>
 
-        <div className="flex flex-col md:flex-row mb-10">
+        <div className="flex flex-col md:flex-row mb-10 justify-center items-center lg:items-start">
           <button
             className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
             Sign Up

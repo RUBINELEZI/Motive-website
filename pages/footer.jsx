@@ -10,7 +10,7 @@ export default function Footer() {
   };
   return (
     <footer
-      className="lg:text-left p-12 text-gray-400 flex flex-col bg-gradient-to-b from-[#343340] to-gray-800 opacity-85 ">
+      className="lg:text-left p-12 text-gray-400 flex flex-col bg-gradient-to-b from-[#343340] to-gray-800 opacity-85">
       <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300 ">
         <div className="mr-12 hidden lg:block ">
           <span>Get connected with us on social networks:</span>

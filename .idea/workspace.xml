@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c4ec9ba7-5c95-42c4-b820-c4a4329aec74" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/features.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/features.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MenuMobile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MenuMobile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ourStory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ourStory.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +129,7 @@
       <workItem from="1650204617012" duration="1374000" />
       <workItem from="1650637787113" duration="701000" />
       <workItem from="1650988777556" duration="9321000" />
-      <workItem from="1651236513202" duration="12477000" />
+      <workItem from="1651236513202" duration="22437000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1649337961223</created>
@@ -136,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649337961223</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix">
+      <created>1651341373795</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651341373795</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
