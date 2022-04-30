@@ -12,8 +12,6 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <ScrollToTop smooth color="#121212" height="20" width="40"
-                     style={{ zIndex: 100, background: "#b794f4", borderRadius: "22px" }} />
         <Hero />
         <OurStory />
         <div className="bg-gradient-to-r from-[#343340] to-gray-800 opacity-85">
@@ -24,6 +22,8 @@ export default function Home() {
         <Contact />
         <Footer />
       </Layout>
+      <ScrollToTop smooth color="#121212" height="20" width="40"
+                   style={{ zIndex: 100, background: "#b794f4", borderRadius: "22px" }} />
     </>
   );
 }
