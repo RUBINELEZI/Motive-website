@@ -1,5 +1,4 @@
 import Image from "next/image";
-import iphone from "../public/images/sharedImages/iphone.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,17 +18,20 @@ export default function Hero() {
           <span className="inline-block w-3 h-1 ml-1 rounded-full bg-purple-800" />
           <span className="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800" />
         </div>
-        <p className="leading-normal text-base md:text-1xl mb-8 text-center md:text-left z-10 text-slate-400 font-normal">
+        <p
+          className="leading-normal text-base md:text-1xl mb-8 text-center md:text-left z-10 text-slate-400 font-normal">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry standard dummy text ever
           since the 1500s,{" "}
         </p>
 
         <div className="flex flex-col md:flex-row mb-10">
-          <button className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+          <button
+            className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
             Sign Up
           </button>
-          <button className="text-sm bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+          <button
+            className="text-sm bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
             Log In
             <FontAwesomeIcon icon={faArrowRight} className="ml-4" />
           </button>
@@ -69,7 +71,7 @@ export default function Hero() {
 
           <img
             className="md:w-96 w-44 absolute flex flex-row justify-center duration-700 ease-in-out blur-3xl  z-0"
-            src="/elipse.png"
+            src="/eclipse.png"
             alt="sadsa"
           />
 
@@ -81,7 +83,7 @@ export default function Hero() {
             height={700}
           />
         </div>
-        </div>
+      </div>
     </div>
   );
 }

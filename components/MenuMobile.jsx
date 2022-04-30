@@ -2,7 +2,6 @@ import React from "react";
 import { Transition } from "@headlessui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { HeaderData } from "../data/HeaderData";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -10,7 +9,7 @@ export default function MenuMobile({ isOpen, handleClick }) {
   const scrollDown = (ref) => {
     window.scrollTo({
       top: document.querySelector(`#${ref}`).offsetTop - 64,
-      behavior: 'smooth',
+      behavior: "smooth"
     });
 
     handleClick();
@@ -38,18 +37,20 @@ export default function MenuMobile({ isOpen, handleClick }) {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               {HeaderData.map((data) => (
                 <li key={data.index} className="nav-item" onClick={() => scrollDown(data.link)}>
-                    <a
-                      className="px-3 py-2 mt-5 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
-                      <span className="ml-2">{data.name}</span>
-                    </a>
+                  <a
+                    className="px-3 py-2 mt-5 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-purple-400">
+                    <span className="ml-2">{data.name}</span>
+                  </a>
                 </li>
               ))}
             </ul>
             <div className="flex flex-col md:flex-row">
-              <button className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent border-b-4 border-b-purple-500 hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+              <button
+                className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
                 Motive Creator Labs
               </button>
-              <button className="text-sm bg-purple-400 hover:bg-purple-500 border-b-4 border-b-purple-600 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+              <button
+                className="text-sm bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
                 Motive For Business
               </button>
             </div>
