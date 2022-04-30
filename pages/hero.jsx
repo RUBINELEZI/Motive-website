@@ -9,7 +9,7 @@ export default function Hero() {
       className="container md:p-10 p-4 mx-auto flex flex-wrap  flex-col md:flex-row items-center"
     >
       <div className="flex flex-col w-full z-20 xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
-        <h1 className="mt-16 mb-4 text-3xl mt-16 md:text-5xl text-white  font-semibold text-center md:text-left">
+        <h1 className="mt-16 mb-4 text-3xl mt-16 md:text-5xl text-white font-semibold text-center md:text-left">
           Main Hero Message to sell yourself!
         </h1>
 

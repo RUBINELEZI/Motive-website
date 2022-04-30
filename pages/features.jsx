@@ -14,7 +14,6 @@ export default function Features() {
 
   const [clickMedia, setClickMedia] = useState("");
 
-
   useEffect(() => {
     console.log(showMedia);
   }, [showMedia]);
@@ -31,28 +30,33 @@ export default function Features() {
     } else return media5;
   }
 
-  return (<section id="features" className="grid md:p-10">
-    <div className="container px-6 py-10 mx-auto">
-      <h1 className="text-3xl font-semibold capitalize lg:text-4xl text-[#fff] text-center">
-        Features{" "}
-      </h1>
+  return (
+    <section id="features" className="grid md:p-10">
+      <div className="container px-6 py-10 mx-auto">
+        <h1 className="text-3xl font-semibold capitalize lg:text-4xl text-[#fff] text-center">
+          Features{" "}
+        </h1>
 
-      <div className="mt-2 flex items-center justify-center">
-        <span className="inline-block w-40 h-1 rounded-full bg-purple-800" />
-        <span className="inline-block w-3 h-1 ml-1 rounded-full bg-purple-800" />
-        <span className="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800" />
-      </div>
+        <div className="mt-2 flex items-center justify-center">
+          <span className="inline-block w-40 h-1 rounded-full bg-purple-800" />
+          <span className="inline-block w-3 h-1 ml-1 rounded-full bg-purple-800" />
+          <span className="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800" />
+        </div>
 
-      <div className="mt-8 xl:mt-12 lg:grid lg:items-center lg:grid-cols-3">
-        <div className="w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-right text-center">
-          <div className="space-y-3 md:mr-3 cursor-pointer" onMouseOver={() => setShowMedia("media1")}>
+        <div className="mt-8 xl:mt-12 lg:grid lg:items-center lg:grid-cols-3">
+          <div className="w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-right text-center">
+            <div
+              className="space-y-3 md:mr-3 cursor-pointer"
+              onMouseOver={() => setShowMedia("media1")}
+            >
               <span className="inline-block p-3  rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor">
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -62,26 +66,29 @@ export default function Features() {
                 </svg>
               </span>
 
-            <h1 className="text-2xl font-semibold capitalize text-[#fff]">
-              Feature 1
-            </h1>
+              <h1 className="text-2xl font-semibold capitalize text-[#fff]">
+                Feature 1
+              </h1>
 
-            <p className="text-gray-400 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Provident ab nulla quod dignissimos vel non corrupti doloribus
-              voluptatum eveniet
-            </p>
-          </div>
+              <p className="text-gray-400 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab nulla quod dignissimos vel non corrupti doloribus
+                voluptatum eveniet
+              </p>
+            </div>
 
-          <div className="space-y-3 md:mr-3 mb-6 cursor-pointer" onMouseOver={() => setShowMedia("media2")}
-          >
+            <div
+              className="space-y-3 md:mr-3 mb-6 cursor-pointer"
+              onMouseOver={() => setShowMedia("media2")}
+            >
               <span className="inline-block p-3 rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor">
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -97,104 +104,108 @@ export default function Features() {
                 </svg>
               </span>
 
-            <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
-              Feature 2
-            </h1>
+              <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
+                Feature 2
+              </h1>
 
-            <p className="text-gray-400 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Provident ab nulla quod dignissimos vel non corrupti doloribus
-              voluptatum eveniet
-            </p>
-          </div>
-        </div>
-
-        <div className="w-full items-center flex justify-center">
-          <img
-            className="w-96 absolute flex flex-row justify-center duration-700 ease-in-out blur-3xl z-0"
-            src="/eclipse.png"
-            alt="eclipse"
-          />
-          {/* <Image src={iphone} width="300px" height="600px" alt='iphone'/> */}
-          <div className="border-[12px] rounded-[42px] border-slate-600 border-opacity-20 md:hidden">
-            <div className="w-[300px] h-[600px]">
-              <Swiper
-                spaceBetween={0}
-                slidesPerView={1}
-                onSwiper={(swiper) => console.log(swiper)}
-                className="rounded-[32px] ">
-                <SwiperSlide>
-                  <Image
-                    src={media1}
-                    width={300}
-                    height={600}
-                    alt="mockup"
-                    className="rounded-[32px] object-cover"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src={media2}
-                    width={300}
-                    height={600}
-                    alt="mockup"
-                    className="rounded-[32px] object-cover"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src={media3}
-                    width={300}
-                    height={600}
-                    alt="mockup"
-                    className="rounded-[32px] object-cover"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src={media4}
-                    width={300}
-                    height={600}
-                    alt="mockup"
-                    className="rounded-[32px] object-cover"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src={media5}
-                    width={300}
-                    height={600}
-                    alt="mockup"
-                    className="rounded-[32px] object-cover"
-                  />
-                </SwiperSlide>
-              </Swiper>
+              <p className="text-gray-400 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab nulla quod dignissimos vel non corrupti doloribus
+                voluptatum eveniet
+              </p>
             </div>
           </div>
 
-          <div className="border-[12px] rounded-[42px] border-slate-600 border-opacity-20 hidden md:block">
-            <div className="w-[300px] h-[600px]">
-              <Image
-                src={mediaHover()}
-                width={300}
-                height={600}
-                alt="mockup"
-                className="rounded-[32px] object-cover"
-              />
+          <div className="w-full items-center flex justify-center">
+            <img
+              className="w-96 absolute flex flex-row justify-center duration-700 ease-in-out blur-3xl z-0"
+              src="/eclipse.png"
+              alt="eclipse"
+            />
+            {/* <Image src={iphone} width="300px" height="600px" alt='iphone'/> */}
+            <div className="border-[12px] rounded-[42px] border-slate-600 border-opacity-20 md:hidden">
+              <div className="w-[300px] h-[600px]">
+                <Swiper
+                  spaceBetween={0}
+                  slidesPerView={1}
+                  onSwiper={(swiper) => console.log(swiper)}
+                  className="rounded-[32px] "
+                >
+                  <SwiperSlide>
+                    <Image
+                      src={media1}
+                      width={300}
+                      height={600}
+                      alt="mockup"
+                      className="rounded-[32px] object-cover"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src={media2}
+                      width={300}
+                      height={600}
+                      alt="mockup"
+                      className="rounded-[32px] object-cover"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src={media3}
+                      width={300}
+                      height={600}
+                      alt="mockup"
+                      className="rounded-[32px] object-cover"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src={media4}
+                      width={300}
+                      height={600}
+                      alt="mockup"
+                      className="rounded-[32px] object-cover"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src={media5}
+                      width={300}
+                      height={600}
+                      alt="mockup"
+                      className="rounded-[32px] object-cover"
+                    />
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+            </div>
+
+            <div className="border-[12px] rounded-[42px] border-slate-600 border-opacity-20 hidden md:block">
+              <div className="w-[300px] h-[600px]">
+                <Image
+                  src={mediaHover()}
+                  width={300}
+                  height={600}
+                  alt="mockup"
+                  className="rounded-[32px] object-cover"
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-left text-center">
-          <div className="space-y-3 md:ml-3 mt-6 cursor-pointer" onMouseOver={() => setShowMedia("media3")}
-          >
+          <div className="w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-left text-center">
+            <div
+              className="space-y-3 md:ml-3 mt-6 cursor-pointer"
+              onMouseOver={() => setShowMedia("media3")}
+            >
               <span className="inline-block p-3   rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor">
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -203,25 +214,28 @@ export default function Features() {
                   />
                 </svg>
               </span>
-            <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
-              Feature 3
-            </h1>
-            <p className="text-gray-400 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Provident ab nulla quod dignissimos vel non corrupti doloribus
-              voluptatum eveniet
-            </p>
-          </div>
+              <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
+                Feature 3
+              </h1>
+              <p className="text-gray-400 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab nulla quod dignissimos vel non corrupti doloribus
+                voluptatum eveniet
+              </p>
+            </div>
 
-          <div className="space-y-3 md:ml-3 cursor-pointer" onMouseOver={() => setShowMedia("media4")}
-          >
+            <div
+              className="space-y-3 md:ml-3 cursor-pointer"
+              onMouseOver={() => setShowMedia("media4")}
+            >
               <span className="inline-block p-3  rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor">
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -230,26 +244,29 @@ export default function Features() {
                   />
                 </svg>
               </span>
-            <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
-              Feature 4
-            </h1>
-            <p className="text-gray-400 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Provident ab nulla quod dignissimos vel non corrupti doloribus
-              voluptatum eveniet
-            </p>
+              <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
+                Feature 4
+              </h1>
+              <p className="text-gray-400 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab nulla quod dignissimos vel non corrupti doloribus
+                voluptatum eveniet
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col items-center text-center mt-6 space-y-3 md:ml-3 cursor-pointer"
-           onMouseOver={() => setShowMedia("media5")}>
+        <div
+          className="flex flex-col items-center text-center mt-6 space-y-3 md:ml-3 cursor-pointer"
+          onMouseOver={() => setShowMedia("media5")}
+        >
           <span className="inline-block p-3   rounded-xl text-[#fff] bg-[#6B21A7]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-6 h-6"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor">
+              stroke="currentColor"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -258,15 +275,16 @@ export default function Features() {
               />
             </svg>
           </span>
-        <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
-          Feature 5
-        </h1>
-        <p className="text-gray-400 ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-          ab nulla quod dignissimos vel non corrupti doloribus voluptatum
-          eveniet
-        </p>
+          <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
+            Feature 5
+          </h1>
+          <p className="text-gray-400 ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            ab nulla quod dignissimos vel non corrupti doloribus voluptatum
+            eveniet
+          </p>
+        </div>
       </div>
-    </div>
-  </section>);
+    </section>
+  );
 }
