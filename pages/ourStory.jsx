@@ -1,5 +1,17 @@
 import Image from "next/image";
-export default function OurStory() {
+export default function OurStory({ data }) {
+  const content = data.data.attributes;
+  const rImage = !content.Right_Image.data
+    ? "/f1.png"
+    : content.Right_Image.data.attributes.formats.medium.url;
+
+  const lImage =
+    content.Left_Image.data === null
+      ? "/f1.png"
+      : content.Left_Image.data.attributes.formats.medium.url;
+
+  console.log(lImage);
+  console.log(content);
   return (
     <div
       id="ourStory"
@@ -8,7 +20,7 @@ export default function OurStory() {
       <div className="flex flex-col md:pr-10 w-full xl:w-1/2 justify-center lg:items-start overflow-y-hidden">
         <div className="mb-10">
           <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white text-center">
-            Our story{" "}
+            {content.Title}
           </h1>
           <div className="mt-2 flex items-center justify-center">
             <span className="inline-block w-40 h-1 rounded-full bg-purple-800"></span>
@@ -17,19 +29,15 @@ export default function OurStory() {
           </div>
         </div>
         <p className="leading-normal text-base  mb-8 text-center md:text-left z-10">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry standard dummy text ever
-          since the 1500s,
+          {content.First_text}
         </p>
 
-        <div>
-
-        </div>
+        <div></div>
 
         <div className="w-full z-10 overflow-hidden">
           <Image
             className="mx-auto w-full md:w-4/5"
-            src="/f1.png"
+            src={`http://localhost:1337` + lImage}
             width={700}
             height={600}
             alt="sadsa"
@@ -41,7 +49,7 @@ export default function OurStory() {
         <div className="w-full  overflow-hidden">
           <Image
             className="mx-auto w-full md:w-4/5"
-            src="/f1.png"
+            src={`http://localhost:1337` + rImage}
             width={700}
             height={600}
             alt="sadsa"
@@ -49,13 +57,7 @@ export default function OurStory() {
         </div>
 
         <p className="mb-8 text-center md:text-left z-10">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset
+          {content.Right_Text}
         </p>
       </div>
     </div>
