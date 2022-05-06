@@ -14,7 +14,9 @@ export default function Home({
                                features,
                                about,
                                newsletter,
-                               contact
+                               contact,
+                               footer
+
                              }) {
   return (
     <>
@@ -27,7 +29,7 @@ export default function Home({
         </div>
         <Newsletter data={newsletter} />
         <Contact data={contact} />
-        <Footer />
+        <Footer data={footer} />
       </Layout>
       <ScrollToTop smooth color="#121212" height="20" width="40"
                    style={{ zIndex: 100, background: "#b794f4", borderRadius: "22px" }} />
@@ -55,7 +57,10 @@ export async function getServerSideProps(context) {
   const res6 = await fetch(`http://localhost:1337/api/Contact-Us?populate=*`);
   const contact = await res6.json();
 
+  const res7 = await fetch(`http://localhost:1337/api/footer?populate=*`);
+  const footer = await res7.json();
+  console.log(footer);
 
   // Pass data to the page via props
-  return { props: { hero, ourStory, features, about, newsletter, contact } };
+  return { props: { hero, ourStory, features, about, newsletter, contact, footer } };
 }
