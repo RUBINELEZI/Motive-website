@@ -1,13 +1,39 @@
 import Image from "next/image";
-import iphone from "../public/images/sharedImages/iphone.png";
-// import Rectangle from "../public/images/featureImages/Rectangle 646.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/autoplay";
+import media1 from "../public/media/media-1.jpg";
+import media2 from "../public/media/media-2.jpg";
+import media3 from "../public/media/media-3.jpg";
+import media4 from "../public/media/media-4.jpg";
+import media5 from "../public/media/media-5.jpg";
+import { useEffect, useState } from "react";
 
-export default function Features({ data }) {
+export default function Features() {
+  const [showMedia, setShowMedia] = useState("");
   const content = data.data.attributes;
+  const [clickMedia, setClickMedia] = useState("");
+
+  useEffect(() => {
+    console.log(showMedia);
+  }, [showMedia]);
+
+  function mediaHover() {
+    if (showMedia === "media1") {
+      return media1;
+    } else if (showMedia === "media2") {
+      return media2;
+    } else if (showMedia === "media3") {
+      return media3;
+    } else if (showMedia === "media4") {
+      return media4;
+    } else return media5;
+  }
+
   return (
     <section id="features" className="grid md:p-10">
       <div className="container px-6 py-10 mx-auto">
-        <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl text-[#fff] text-center">
+        <h1 className="text-3xl font-semibold capitalize lg:text-4xl text-[#fff] text-center">
           {content.Title}
         </h1>
 
@@ -19,8 +45,11 @@ export default function Features({ data }) {
 
         <div className="mt-8 xl:mt-12 lg:grid lg:items-center lg:grid-cols-3">
           <div className="w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-right text-center">
-            <div className="space-y-3 md:mr-3">
-              <span className="inline-block p-3  bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
+            <div
+              className="space-y-3 md:mr-3 cursor-pointer"
+              onMouseOver={() => setShowMedia("media1")}
+            >
+              <span className="inline-block p-3  rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -41,13 +70,16 @@ export default function Features({ data }) {
                 {content.Feature_1.Feature_title}
               </h1>
 
-              <p className="text-gray-500 text-[#f3f3f3]">
+              <p className="text-gray-400 ">
                 {content.Feature_1.Feature_Description}
               </p>
             </div>
 
-            <div className="space-y-3 md:mr-3 mb-6">
-              <span className="inline-block p-3  bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
+            <div
+              className="space-y-3 md:mr-3 mb-6 cursor-pointer"
+              onMouseOver={() => setShowMedia("media2")}
+            >
+              <span className="inline-block p-3  rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -74,7 +106,7 @@ export default function Features({ data }) {
                 {content.Feature_2.Feature_title}
               </h1>
 
-              <p className="text-gray-500 text-[#f3f3f3]">
+              <p className="text-gray-400 ">
                 {content.Feature_2.Feature_Description}
               </p>
             </div>
@@ -82,16 +114,87 @@ export default function Features({ data }) {
 
           <div className="w-full items-center flex justify-center">
             <img
-              className="w-96 absolute flex flex-row justify-center duration-700 ease-in-out blur-3xl  z-0"
-              src="/elipse.png"
-              alt="sadsa"
+              className="w-96 absolute flex flex-row justify-center duration-700 ease-in-out blur-3xl z-0"
+              src="/eclipse.png"
+              alt="eclipse"
             />
-            <Image src={iphone} width="300px" height="600px" alt="iphone" />
+            {/* <Image src={iphone} width="300px" height="600px" alt="iphone" />*/}
+            <div className="border-[12px] rounded-[42px] border-slate-600 border-opacity-20 md:hidden">
+              <div className="w-[300px] h-[600px]">
+                <Swiper
+                  spaceBetween={0}
+                  slidesPerView={1}
+                  onSwiper={(swiper) => console.log(swiper)}
+                  className="rounded-[32px] "
+                >
+                  <SwiperSlide>
+                    <Image
+                      src={media1}
+                      width={300}
+                      height={600}
+                      alt="mockup"
+                      className="rounded-[32px] object-cover"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src={media2}
+                      width={300}
+                      height={600}
+                      alt="mockup"
+                      className="rounded-[32px] object-cover"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src={media3}
+                      width={300}
+                      height={600}
+                      alt="mockup"
+                      className="rounded-[32px] object-cover"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src={media4}
+                      width={300}
+                      height={600}
+                      alt="mockup"
+                      className="rounded-[32px] object-cover"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src={media5}
+                      width={300}
+                      height={600}
+                      alt="mockup"
+                      className="rounded-[32px] object-cover"
+                    />
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+            </div>
+
+            <div className="border-[12px] rounded-[42px] border-slate-600 border-opacity-20 hidden md:block">
+              <div className="w-[300px] h-[600px]">
+                <Image
+                  src={mediaHover()}
+                  width={300}
+                  height={600}
+                  alt="mockup"
+                  className="rounded-[32px] object-cover"
+                />
+              </div>
+            </div>
           </div>
 
           <div className="w-full grid grid-cols-1 gap-8 xl:gap-16 lg:text-left text-center">
-            <div className="space-y-3 md:ml-3 mt-6">
-              <span className="inline-block p-3  bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
+            <div
+              className="space-y-3 md:ml-3 mt-6 cursor-pointer"
+              onMouseOver={() => setShowMedia("media3")}
+            >
+              <span className="inline-block p-3   rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -110,15 +213,18 @@ export default function Features({ data }) {
               <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
                 {content.Feature_3.Feature_title}
               </h1>
-              <p className="text-gray-500 text-[#f3f3f3]">
+              <p className="text-gray-400 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Provident ab nulla quod dignissimos vel non corrupti doloribus
                 voluptatum eveniet
               </p>
             </div>
 
-            <div className="space-y-3 md:ml-3">
-              <span className="inline-block p-3  bg-blue-100 rounded-xl text-[#fff] bg-[#6B21A7]">
+            <div
+              className="space-y-3 md:ml-3 cursor-pointer"
+              onMouseOver={() => setShowMedia("media4")}
+            >
+              <span className="inline-block p-3  rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -137,13 +243,42 @@ export default function Features({ data }) {
               <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
                 {content.Feature_4.Feature_title}
               </h1>
-              <p className="text-gray-500 text-[#f3f3f3]">
+              <p className="text-gray-400 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Provident ab nulla quod dignissimos vel non corrupti doloribus
                 voluptatum eveniet
               </p>
             </div>
           </div>
+        </div>
+        <div
+          className="flex flex-col items-center text-center mt-6 space-y-3 md:ml-3 cursor-pointer"
+          onMouseOver={() => setShowMedia("media5")}
+        >
+          <span className="inline-block p-3   rounded-xl text-[#fff] bg-[#6B21A7]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+              />
+            </svg>
+          </span>
+          <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
+            Feature 5
+          </h1>
+          <p className="text-gray-400 ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            ab nulla quod dignissimos vel non corrupti doloribus voluptatum
+            eveniet
+          </p>
         </div>
       </div>
     </section>

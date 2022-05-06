@@ -18,21 +18,21 @@ export default function Newsletter() {
         </div>
       </div>
       <div className="flex flex-col justify-center mt-9 order-1 md:order-2">
-        <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl text-[#fff]">Subscribe
-          Newsletter
+        <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl text-[#fff] ml-4">
+          Subscribe Newsletter
         </h1>
 
-        <div className="mt-2 flex mb-2">
-          <span className="inline-block w-40 h-1 rounded-full bg-purple-800"/>
-          <span className="inline-block w-3 h-1 ml-1 rounded-full bg-purple-800"/>
-          <span className="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800"/>
+        <div className="mt-2 flex mb-2 ml-4">
+          <span className="inline-block w-40 h-1 rounded-full bg-purple-800" />
+          <span className="inline-block w-3 h-1 ml-1 rounded-full bg-purple-800" />
+          <span className="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800" />
         </div>
 
-        <p className="md:w-2/3">
+        <p className="md:w-2/3 ml-4">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever
         </p>
-        <form className="">
+        <form className="ml-4">
           <div
             className="flex h-fit items-stretch mt-12 sm:max-w-md mb-8 sm:flex sm:items-center bg-[#4E4B66] rounded-xl pr-4">
             <input
