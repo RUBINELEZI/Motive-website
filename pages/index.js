@@ -9,13 +9,13 @@ import Footer from "./footer";
 import ScrollToTop from "react-scroll-to-top";
 
 export default function Home({
-  hero,
-  ourStory,
-  features,
-  about,
-  newsletter,
-  contact,
-}) {
+                               hero,
+                               ourStory,
+                               features,
+                               about,
+                               newsletter,
+                               contact
+                             }) {
   return (
     <>
       <Layout>
@@ -23,10 +23,10 @@ export default function Home({
         <OurStory data={ourStory} />
         <div className="bg-gradient-to-r from-[#343340] to-gray-800 opacity-85">
           <Features data={features} />
-          <About />
+          <About data={about} />
         </div>
-        <Newsletter />
-        <Contact />
+        <Newsletter data={newsletter} />
+        <Contact data={contact} />
         <Footer />
       </Layout>
       <ScrollToTop smooth color="#121212" height="20" width="40"
@@ -36,7 +36,6 @@ export default function Home({
 }
 
 export async function getServerSideProps(context) {
-  console.log("sabdhsadjhsa");
   // Fetch data from external API
   const res = await fetch(`http://localhost:1337/api/hero?populate=*`);
   const hero = await res.json();
@@ -47,6 +46,16 @@ export async function getServerSideProps(context) {
   const res3 = await fetch(`http://localhost:1337/api/feature?populate=*`);
   const features = await res3.json();
 
+  const res4 = await fetch(`http://localhost:1337/api/about-us?populate=*`);
+  const about = await res4.json();
+
+  const res5 = await fetch(`http://localhost:1337/api/newsletter?populate=*`);
+  const newsletter = await res5.json();
+
+  const res6 = await fetch(`http://localhost:1337/api/Contact-Us?populate=*`);
+  const contact = await res6.json();
+
+
   // Pass data to the page via props
-  return { props: { hero, ourStory, features } };
+  return { props: { hero, ourStory, features, about, newsletter, contact } };
 }

@@ -1,10 +1,16 @@
-export default function About() {
+import Image from "next/image";
+
+export default function About({ data }) {
+  const content = data.data.attributes;
+  const media1 = `http://localhost:1337` + content.Person_1.Photo.data.attributes.formats.small.url;
+  const media2 = `http://localhost:1337` + content.Person_2.Photo.data.attributes.formats.small.url;
+  const media3 = `http://localhost:1337` + content.Person_3.Photo.data.attributes.formats.small.url;
   return (
     <div id="aboutUs" className="container p-4 mx-auto flex flex-wrap flex-col md:flex-row h-full items-center ">
       <div className="bg-gradient-to-r from-gray-600 to-gray-700 w-full md:h-fit h- absolute m-0 opacity-50 left-0" />
       <div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
         <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl text-[#fff] text-center mb-2">
-          About US
+          {content.Title}
         </h1>
 
         <div className="flex items-center justify-center mb-2">
@@ -15,11 +21,7 @@ export default function About() {
 
         <p
           className="leading-normal text-base md:text-1xl text-md mb-8 text-center md:text-left z-10 text-slate-400 font-normal">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into
+          {content.Description}
         </p>
       </div>
       <img
@@ -40,14 +42,13 @@ export default function About() {
           <div className="shrink-0">
             <div
               className="m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-blue-500 text-xl text-white uppercase">
-              <i className="fa fa-user"></i>
+              <Image src={media1} layout={"fill"} alt="person" className="rounded-full" />
             </div>
           </div>
           <div>
-            <div className="text-xl font-medium text-white">Person 1</div>
+            <div className="text-xl font-medium text-white">{content.Person_1.Name}</div>
             <p className="text-sm text-white">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.{" "}
+              {content.Person_1.Description}
             </p>
           </div>
         </div>
@@ -57,14 +58,13 @@ export default function About() {
           <div className="shrink-0">
             <div
               className="m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-blue-500 text-xl text-white uppercase">
-              <i className="fa fa-user"></i>
+              <Image src={media2} layout={"fill"} alt="person" className="rounded-full" />
             </div>
           </div>
           <div>
-            <div className="text-xl font-medium text-white">Person 2</div>
+            <div className="text-xl font-medium text-white">{content.Person_2.Name}</div>
             <p className="text-sm text-white">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.{" "}
+              {content.Person_3.Description}
             </p>
           </div>
         </div>
@@ -74,14 +74,13 @@ export default function About() {
           <div className="shrink-0">
             <div
               className="m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-blue-500 text-xl text-white uppercase">
-              <i className="fa fa-user"></i>
+              <Image src={media3} layout={"fill"} alt="person" className="rounded-full" />
             </div>
           </div>
           <div>
-            <div className="text-xl font-medium text-white">Person 3</div>
+            <div className="text-xl font-medium text-white">{content.Person_2.Name}</div>
             <p className="text-sm text-white">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.{" "}
+              {content.Person_2.Description}
             </p>
           </div>
         </div>

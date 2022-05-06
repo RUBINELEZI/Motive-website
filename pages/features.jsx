@@ -2,21 +2,16 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
-import media1 from "../public/media/media-1.jpg";
-import media2 from "../public/media/media-2.jpg";
-import media3 from "../public/media/media-3.jpg";
-import media4 from "../public/media/media-4.jpg";
-import media5 from "../public/media/media-5.jpg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-export default function Features() {
+export default function Features({ data }) {
   const [showMedia, setShowMedia] = useState("");
   const content = data.data.attributes;
-  const [clickMedia, setClickMedia] = useState("");
-
-  useEffect(() => {
-    console.log(showMedia);
-  }, [showMedia]);
+  const media1 = `http://localhost:1337` + content.Feature_1.Feature_icon.data.attributes.formats.medium.url;
+  const media2 = `http://localhost:1337` + content.Feature_2.Feature_icon.data.attributes.formats.medium.url;
+  const media3 = `http://localhost:1337` + content.Feature_3.Feature_icon.data.attributes.formats.medium.url;
+  const media4 = `http://localhost:1337` + content.Feature_4.Feature_icon.data.attributes.formats.medium.url;
+  const media5 = `http://localhost:1337` + content.Feature_5.Feature_icon.data.attributes.formats.medium.url;
 
   function mediaHover() {
     if (showMedia === "media1") {
@@ -210,13 +205,12 @@ export default function Features() {
                   />
                 </svg>
               </span>
-              <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
+              <h1 className="text-2xl font-semibold capitalize text-[#fff]">
                 {content.Feature_3.Feature_title}
               </h1>
+
               <p className="text-gray-400 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+                {content.Feature_3.Feature_Description}
               </p>
             </div>
 
@@ -240,13 +234,12 @@ export default function Features() {
                   />
                 </svg>
               </span>
-              <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
+              <h1 className="text-2xl font-semibold capitalize text-[#fff]">
                 {content.Feature_4.Feature_title}
               </h1>
+
               <p className="text-gray-400 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+                {content.Feature_4.Feature_Description}
               </p>
             </div>
           </div>
@@ -271,13 +264,12 @@ export default function Features() {
               />
             </svg>
           </span>
-          <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
-            Feature 5
+          <h1 className="text-2xl font-semibold capitalize text-[#fff]">
+            {content.Feature_5.Feature_title}
           </h1>
+
           <p className="text-gray-400 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            ab nulla quod dignissimos vel non corrupti doloribus voluptatum
-            eveniet
+            {content.Feature_5.Feature_Description}
           </p>
         </div>
       </div>

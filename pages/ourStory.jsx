@@ -11,8 +11,6 @@ export default function OurStory({ data }) {
       ? "/f1.png"
       : content.Left_Image.data.attributes.formats.medium.url;
 
-  console.log(lImage);
-  console.log(content);
   return (
     <section id="ourStory" className="grid md:p-10">
       <div className="container px-6 py-10 mx-auto">
@@ -33,7 +31,8 @@ export default function OurStory({ data }) {
                 {content.First_text}
               </p>
               <div className="w-full z-10 overflow-hidden">
-                <Image className="mx-auto w-full md:w-4/5" src="/f1.png" width={700} height={600} alt="image" />
+                <Image className="mx-auto w-full md:w-4/5" src={`http://localhost:1337` + lImage} width={700}
+                       height={600} alt="image" />
               </div>
             </div>
           </div>
@@ -42,7 +41,8 @@ export default function OurStory({ data }) {
             <div
               className="space-y-3">
               <div className="w-full z-10 overflow-hidden">
-                <Image className="mx-auto w-full md:w-4/5" src={`http://localhost:1337` + lImage} width={700} height={600} alt="image" />
+                <Image className="mx-auto w-full md:w-4/5" src={`http://localhost:1337` + rImage} width={700}
+                       height={600} alt="image" />
               </div>
 
               <p className="text-gray-400 ">
