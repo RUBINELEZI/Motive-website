@@ -51,3 +51,12 @@ export default function Newsletter({ data }) {
     </div>
   );
 }
+
+export async function getServerSideProps(context) {
+  // Fetch data from external API
+  const res = await fetch(`https://motive-admin.herokuapp.com/api/newsletter?populate=*`);
+  const data = await res.json();
+
+  // Pass data to the page via props
+  return { props: { data } };
+}

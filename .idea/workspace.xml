@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4ec9ba7-5c95-42c4-b820-c4a4329aec74" name="Changes" comment="strapi work work work" />
+    <list default="true" id="c4ec9ba7-5c95-42c4-b820-c4a4329aec74" name="Changes" comment="connect with strapi">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/aboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/aboutUs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contactUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contactUs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/features.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/features.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/newsletter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/newsletter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/ourStory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ourStory.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/swiper.jsx" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,25 +72,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "code.cleanup.on.save": "true",
-    "last_opened_file_path": "C:/Users/Dell/Documents/Motive/Frontend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/kejdi/Desktop/code/clients/Motive-website/node_modules/prettier",
-    "settings.editor.selected.configurable": "actions.on.save",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/Desktop/Code/Clients/Motive/Frontend/Motive-website&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/kejdi/Desktop/code/clients/Motive-website/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -96,6 +106,23 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.lint" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -124,6 +151,8 @@
       <workItem from="1650988777556" duration="9321000" />
       <workItem from="1651236513202" duration="22437000" />
       <workItem from="1652103872671" duration="471000" />
+      <workItem from="1652104937557" duration="349000" />
+      <workItem from="1652105290340" duration="581000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1649337961223</created>
@@ -146,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651831948129</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="connect with strapi">
+      <created>1652105015782</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652105015782</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +205,8 @@
     <MESSAGE value="Requested Changes" />
     <MESSAGE value="strapi connect" />
     <MESSAGE value="strapi work work work" />
-    <option name="LAST_COMMIT_MESSAGE" value="strapi work work work" />
+    <MESSAGE value="connect with strapi" />
+    <option name="LAST_COMMIT_MESSAGE" value="connect with strapi" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
