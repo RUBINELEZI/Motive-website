@@ -1,9 +1,10 @@
 import Image from "next/image";
-import iphones from "../public/images/newsletterIphones.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-export default function Newsletter() {
+export default function Newsletter({ data }) {
+  const content = data.data.attributes;
+  const media1 = `https://motive-admin.herokuapp.com` + content.Image.data.attributes.formats.medium.url;
   return (
     <div id="newsletter" className="text-white px-10 bg-gradient-to-r from-[#E8A980] to-[#6A54EF] grid lg:grid-cols-2">
       <div className="flex flex-row justify-center order-2 md:order-1 mb-0">
@@ -11,7 +12,7 @@ export default function Newsletter() {
           <Image
             width="682px"
             height="543px"
-            src={iphones}
+            src={media1}
             alt="iphones"
             quality={100}
           />
@@ -19,7 +20,7 @@ export default function Newsletter() {
       </div>
       <div className="flex flex-col justify-center mt-9 order-1 md:order-2">
         <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl text-[#fff] ml-4">
-          Subscribe Newsletter
+          {content.Title}
         </h1>
 
         <div className="mt-2 flex mb-2 ml-4">
@@ -29,8 +30,7 @@ export default function Newsletter() {
         </div>
 
         <p className="md:w-2/3 ml-4">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever
+          {content.Description}
         </p>
         <form className="ml-4">
           <div

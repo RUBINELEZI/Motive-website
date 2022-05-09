@@ -2,21 +2,16 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
-import media1 from "../public/media/media-1.jpg";
-import media2 from "../public/media/media-2.jpg";
-import media3 from "../public/media/media-3.jpg";
-import media4 from "../public/media/media-4.jpg";
-import media5 from "../public/media/media-5.jpg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-export default function Features() {
+export default function Features({ data }) {
   const [showMedia, setShowMedia] = useState("");
-
-  const [clickMedia, setClickMedia] = useState("");
-
-  useEffect(() => {
-    console.log(showMedia);
-  }, [showMedia]);
+  const content = data.data.attributes;
+  const media1 = `https://motive-admin.herokuapp.com` + content.Feature_1.Feature_icon.data.attributes.formats.medium.url;
+  const media2 = `https://motive-admin.herokuapp.com` + content.Feature_2.Feature_icon.data.attributes.formats.medium.url;
+  const media3 = `https://motive-admin.herokuapp.com` + content.Feature_3.Feature_icon.data.attributes.formats.medium.url;
+  const media4 = `https://motive-admin.herokuapp.com` + content.Feature_4.Feature_icon.data.attributes.formats.medium.url;
+  const media5 = `https://motive-admin.herokuapp.com` + content.Feature_5.Feature_icon.data.attributes.formats.medium.url;
 
   function mediaHover() {
     if (showMedia === "media1") {
@@ -34,7 +29,7 @@ export default function Features() {
     <section id="features" className="grid md:p-10">
       <div className="container px-6 py-10 mx-auto">
         <h1 className="text-3xl font-semibold capitalize lg:text-4xl text-[#fff] text-center">
-          Features{" "}
+          {content.Title}
         </h1>
 
         <div className="mt-2 flex items-center justify-center">
@@ -67,13 +62,11 @@ export default function Features() {
               </span>
 
               <h1 className="text-2xl font-semibold capitalize text-[#fff]">
-                Feature 1
+                {content.Feature_1.Feature_title}
               </h1>
 
               <p className="text-gray-400 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+                {content.Feature_1.Feature_Description}
               </p>
             </div>
 
@@ -81,7 +74,7 @@ export default function Features() {
               className="space-y-3 md:mr-3 mb-6 cursor-pointer"
               onMouseOver={() => setShowMedia("media2")}
             >
-              <span className="inline-block p-3 rounded-xl text-[#fff] bg-[#6B21A7]">
+              <span className="inline-block p-3  rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -105,13 +98,11 @@ export default function Features() {
               </span>
 
               <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
-                Feature 2
+                {content.Feature_2.Feature_title}
               </h1>
 
               <p className="text-gray-400 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+                {content.Feature_2.Feature_Description}
               </p>
             </div>
           </div>
@@ -122,7 +113,7 @@ export default function Features() {
               src="/eclipse.png"
               alt="eclipse"
             />
-            {/* <Image src={iphone} width="300px" height="600px" alt='iphone'/> */}
+            {/* <Image src={iphone} width="300px" height="600px" alt="iphone" />*/}
             <div className="border-[12px] rounded-[42px] border-slate-600 border-opacity-20 md:hidden">
               <div className="w-[300px] h-[600px]">
                 <Swiper
@@ -214,13 +205,12 @@ export default function Features() {
                   />
                 </svg>
               </span>
-              <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
-                Feature 3
+              <h1 className="text-2xl font-semibold capitalize text-[#fff]">
+                {content.Feature_3.Feature_title}
               </h1>
+
               <p className="text-gray-400 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+                {content.Feature_3.Feature_Description}
               </p>
             </div>
 
@@ -244,13 +234,12 @@ export default function Features() {
                   />
                 </svg>
               </span>
-              <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
-                Feature 4
+              <h1 className="text-2xl font-semibold capitalize text-[#fff]">
+                {content.Feature_4.Feature_title}
               </h1>
+
               <p className="text-gray-400 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+                {content.Feature_4.Feature_Description}
               </p>
             </div>
           </div>
@@ -275,13 +264,12 @@ export default function Features() {
               />
             </svg>
           </span>
-          <h1 className="text-2xl font-semibold  capitalize text-[#fff]">
-            Feature 5
+          <h1 className="text-2xl font-semibold capitalize text-[#fff]">
+            {content.Feature_5.Feature_title}
           </h1>
+
           <p className="text-gray-400 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            ab nulla quod dignissimos vel non corrupti doloribus voluptatum
-            eveniet
+            {content.Feature_5.Feature_Description}
           </p>
         </div>
       </div>

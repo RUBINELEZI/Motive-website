@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-export default function Hero() {
+export default function Hero({ data }) {
   return (
 
     <div
@@ -14,7 +14,7 @@ export default function Hero() {
         className="flex flex-col w-full z-20 xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
         <h1
           className="mt-16 mb-4 text-3xl mt-16 md:text-5xl text-white font-semibold text-center lg:text-left">
-          Main Hero Message to sell yourself!
+          {data.data.attributes.Title}
         </h1>
 
         <div className="flex items-center justify-center mb-4">
@@ -24,9 +24,7 @@ export default function Hero() {
         </div>
         <p
           className="leading-normal text-base md:text-1xl mb-8 text-center lg:text-left z-10 text-slate-400 font-normal">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry standard dummy text ever
-          since the 1500s,{" "}
+          {data.data.attributes.Description}
         </p>
 
         <div className="flex flex-col md:flex-row mb-10 justify-center items-center lg:items-start">
@@ -72,7 +70,6 @@ export default function Hero() {
 
       <div className="w-full xl:w-3/5 md:p-12 z-20 overflow-hidden">
         <div className="w-full items-center flex justify-center">
-
           <img
             className="md:w-96 w-44 absolute flex flex-row justify-center duration-700 ease-in-out blur-3xl  z-0"
             src="/eclipse.png"
@@ -81,7 +78,10 @@ export default function Hero() {
 
           <Image
             className="mx-auto w-full md:w-4/5 h-96 transform -rotate-left-6 transition hover:scale-95 duration-700 ease-in-out z-20 hover:rotate-6"
-            src="/heroIphone.png"
+            src={
+              `https://motive-admin.herokuapp.com` +
+              data.data.attributes.Hero_imge.data.attributes.formats.medium.url
+            }
             alt="elipse"
             width={800}
             height={700}

@@ -1,7 +1,6 @@
-import Image from "next/image";
-import macbook from "../public/images/macbook.png";
+export default function Contact({ data }) {
+  const content = data.data.attributes;
 
-export default function Contact() {
   return (
     <section id="contact" className="grid ">
       <div className="container px-6 py-10 mx-auto">
@@ -9,7 +8,7 @@ export default function Contact() {
           <div className="lg:grid lg:grid-cols-2 flex flex-col items-center justify-center">
             <div className="flex flex-col items-center">
               <h1 className="text-3xl font-semibold capitalize lg:text-4xl text-[#fff]">
-                Contact us{" "}
+                {content.Ttile}
               </h1>
 
               <div className="mb-2">
@@ -19,8 +18,7 @@ export default function Contact() {
               </div>
 
               <p className="md:w-2/3 text-gray-200 mb-8 text-center">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever
+                {content.Description}
               </p>
             </div>
 
