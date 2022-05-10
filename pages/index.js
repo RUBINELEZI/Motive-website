@@ -19,8 +19,7 @@ export default function Home({ hero, ourStory, features, about, newsletter, cont
           <About data={about} />
         </div>
         <Newsletter data={newsletter} />
-        <Contact data={contact} name="contact" method="POST"
-                 data-netlify="true" action="/success" />
+        <Contact data={contact} />
         <Footer data={footer} />
       </Layout>
       <ScrollToTop smooth color="#121212" height="20" width="40"

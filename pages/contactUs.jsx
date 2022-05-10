@@ -1,6 +1,13 @@
+import { useEffect, useState } from "react";
+
 export default function Contact({ data }) {
   const content = data.data.attributes;
-
+  const [success, setSuccess] = useState(false);
+  useEffect(() => {
+    if (window.location.search.includes("success=true")) {
+      setSuccess(true);
+    }
+  }, []);
   return (
     <section id="contact" className="grid ">
       <div className="container px-6 py-10 mx-auto">
@@ -22,60 +29,23 @@ export default function Contact({ data }) {
               </p>
             </div>
 
-            <form className="w-full max-w-lg bg-gray-700 bg-opacity-40 p-10 rounded-2xl" name="contact" method="POST"
-                  data-netlify="true" action="/success">
-              <div className="flex flex-wrap -mx-3 mb-6">
-                <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
-                         htmlFor="grid-first-name">
-                    First Name
-                  </label>
-                  <input
-                    className="appearance-none block w-full bg-gray-600 text-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-500"
-                    id="grid-first-name" type="text" placeholder="" name="name" />
-                </div>
-                <div className="w-full md:w-1/2 px-3">
-                  <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
-                         htmlFor="grid-last-name">
-                    Last Name
-                  </label>
-                  <input
-                    className="appearance-none block w-full bg-gray-600 text-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-500"
-                    id="grid-last-name" type="text" placeholder="" name="lastName" />
-                </div>
-              </div>
-              <div className="flex flex-wrap -mx-3 mb-6">
-                <div className="w-full px-3">
-                  <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
-                         htmlFor="grid-password">
-                    E-mail
-                  </label>
-                  <input
-                    className="appearance-none block w-full bg-gray-600 text-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-500 focus:border-gray-500"
-                    id="email" type="email" name="email" />
-                </div>
-              </div>
-              <div className="flex flex-wrap -mx-3 mb-6">
-                <div className="w-full px-3">
-                  <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
-                         htmlFor="grid-password">
-                    Message
-                  </label>
-                  <textarea
-                    className="no-resize appearance-none block w-full bg-gray-600 text-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-500 focus:border-gray-500 h-48 resize-none"
-                    id="message" name="message" />
-                </div>
-              </div>
-              <div className="md:flex md:items-center">
-                <div className="md:w-1/3">
-                  <button
-                    className="shadow bg-purple-400 hover:bg-purple-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                    type="submit">
-                    Send
-                  </button>
-                </div>
-                <div className="md:w-2/3" />
-              </div>
+            <form name="contact" method="POST" data-netlify="true" action="/?success=true"
+            >
+              <p>
+                <label htmlFor="name">Name</label>
+                <input type="text" id="name" name="name" />
+              </p>
+              <p>
+                <label htmlFor="email">Email</label>
+                <input type="text" id="email" name="email" />
+              </p>
+              <p>
+                <label htmlFor="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
             </form>
           </div>
         </div>
@@ -94,3 +64,4 @@ export async function getServerSideProps(context) {
   // Pass data to the page via props
   return { props: { data } };
 }
+
