@@ -29,7 +29,7 @@ export default function Contact({ data }) {
               </p>
             </div>
 
-            <form name="contact" method="POST" data-netlify="true" action="/?success=true"
+            <form name="contact" data-netlify="true" action="/?success=true"
             >
               <p>
                 <label htmlFor="name">Name</label>
