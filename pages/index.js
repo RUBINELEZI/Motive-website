@@ -6,7 +6,7 @@ import About from "./aboutUs";
 import Newsletter from "./newsletter";
 import Footer from "./footer";
 import ScrollToTop from "react-scroll-to-top";
-import Contact from "../components/Contact";
+import Contact from "./Contact";
 
 export default function Home({ hero, ourStory, features, about, newsletter, contact, footer }) {
   return (
