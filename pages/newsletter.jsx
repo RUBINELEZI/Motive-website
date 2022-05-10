@@ -4,7 +4,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Newsletter({ data }) {
   const content = data.data.attributes;
-  const media1 = `https://motive-admin.herokuapp.com` + content.Image.data.attributes.formats.medium.url;
+  const media1 = content.Image.data.attributes.formats.medium.url;
   return (
     <div id="newsletter" className="text-white px-10 bg-gradient-to-r from-[#E8A980] to-[#6A54EF] grid lg:grid-cols-2">
       <div className="flex flex-row justify-center order-2 md:order-1 mb-0">

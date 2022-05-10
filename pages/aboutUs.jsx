@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function About({ data }) {
   const content = data.data.attributes;
-  const media1 = `https://motive-admin.herokuapp.com` + content.Person_1.Photo.data.attributes.formats.small.url;
-  const media2 = `https://motive-admin.herokuapp.com` + content.Person_2.Photo.data.attributes.formats.small.url;
-  const media3 = `https://motive-admin.herokuapp.com` + content.Person_3.Photo.data.attributes.formats.small.url;
+  const media1 = content.Person_1.Photo.data.attributes.formats.small.url;
+  const media2 = content.Person_2.Photo.data.attributes.formats.small.url;
+  const media3 = content.Person_3.Photo.data.attributes.formats.small.url;
   return (
     <div id="aboutUs" className="container p-4 mx-auto flex flex-wrap flex-col md:flex-row h-full items-center ">
       <div className="bg-gradient-to-r from-gray-600 to-gray-700 w-full md:h-fit h- absolute m-0 opacity-50 left-0" />

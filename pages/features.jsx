@@ -7,11 +7,11 @@ import { useState } from "react";
 export default function Features({ data }) {
   const [showMedia, setShowMedia] = useState("");
   const content = data.data.attributes;
-  const media1 = `https://motive-admin.herokuapp.com` + content.Feature_1.Feature_icon.data.attributes.formats.medium.url;
-  const media2 = `https://motive-admin.herokuapp.com` + content.Feature_2.Feature_icon.data.attributes.formats.medium.url;
-  const media3 = `https://motive-admin.herokuapp.com` + content.Feature_3.Feature_icon.data.attributes.formats.medium.url;
-  const media4 = `https://motive-admin.herokuapp.com` + content.Feature_4.Feature_icon.data.attributes.formats.medium.url;
-  const media5 = `https://motive-admin.herokuapp.com` + content.Feature_5.Feature_icon.data.attributes.formats.medium.url;
+  const media1 = content.Feature_1.Feature_icon.data.attributes.formats.medium.url;
+  const media2 = content.Feature_2.Feature_icon.data.attributes.formats.medium.url;
+  const media3 = content.Feature_3.Feature_icon.data.attributes.formats.medium.url;
+  const media4 = content.Feature_4.Feature_icon.data.attributes.formats.medium.url;
+  const media5 = content.Feature_5.Feature_icon.data.attributes.formats.medium.url;
 
   function mediaHover() {
     if (showMedia === "media1") {

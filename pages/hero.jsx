@@ -79,7 +79,7 @@ export default function Hero({ data }) {
           <Image
             className="mx-auto w-full md:w-4/5 h-96 transform -rotate-left-6 transition hover:scale-95 duration-700 ease-in-out z-20 hover:rotate-6"
             src={
-              `https://motive-admin.herokuapp.com` +
+              
               data.data.attributes.Hero_imge.data.attributes.formats.medium.url
             }
             alt="elipse"

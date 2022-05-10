@@ -31,7 +31,7 @@ export default function OurStory({ data }) {
                 {content.First_text}
               </p>
               <div className="w-full z-10 overflow-hidden">
-                <Image className="mx-auto w-full md:w-4/5" src={`https://motive-admin.herokuapp.com` + lImage}
+                <Image className="mx-auto w-full md:w-4/5" src={lImage}
                        width={700}
                        height={600} alt="image" />
               </div>
@@ -42,7 +42,7 @@ export default function OurStory({ data }) {
             <div
               className="space-y-3">
               <div className="w-full z-10 overflow-hidden">
-                <Image className="mx-auto w-full md:w-4/5" src={`https://motive-admin.herokuapp.com` + rImage}
+                <Image className="mx-auto w-full md:w-4/5" src={rImage}
                        width={700}
                        height={600} alt="image" />
               </div>

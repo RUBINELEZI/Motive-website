@@ -4,9 +4,9 @@ import Hero from "./hero";
 import Features from "./features";
 import About from "./aboutUs";
 import Newsletter from "./newsletter";
-import Contact from "./contactUs";
 import Footer from "./footer";
 import ScrollToTop from "react-scroll-to-top";
+import Contact from "../components/Contact";
 
 export default function Home({ hero, ourStory, features, about, newsletter, contact, footer }) {
   return (
