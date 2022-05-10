@@ -8,16 +8,7 @@ import Contact from "./contactUs";
 import Footer from "./footer";
 import ScrollToTop from "react-scroll-to-top";
 
-export default function Home({
-                               hero,
-                               ourStory,
-                               features,
-                               about,
-                               newsletter,
-                               contact,
-                               footer
-
-                             }) {
+export default function Home({ hero, ourStory, features, about, newsletter, contact, footer }) {
   return (
     <>
       <Layout>
@@ -28,7 +19,8 @@ export default function Home({
           <About data={about} />
         </div>
         <Newsletter data={newsletter} />
-        <Contact data={contact} />
+        <Contact data={contact} name="contact" method="POST"
+                 data-netlify="true" action="/success" />
         <Footer data={footer} />
       </Layout>
       <ScrollToTop smooth color="#121212" height="20" width="40"
@@ -59,7 +51,7 @@ export async function getServerSideProps(context) {
 
   const res7 = await fetch(`https://motive-admin.herokuapp.com/api/footer?populate=*`);
   const footer = await res7.json();
-  
+
   // Pass data to the page via props
   return { props: { hero, ourStory, features, about, newsletter, contact, footer } };
 }
