@@ -1,32 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #282734;
-  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #282734;
+    font-family: 'Poppins', sans-serif;
 }
 
 .aboutUsCard:nth-child(2) {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-  .aboutUsCard:nth-child(2) {
-    margin-right: 0;
-  }
+    .aboutUsCard:nth-child(2) {
+        margin-right: 0;
+    }
 }
 
-
-.newsletterIphones {
-    margin-bottom: -28px;
-    z-index: 0;
-}
 
 #contact {
-  z-index: 10;
+    z-index: 10;
 }

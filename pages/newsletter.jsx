@@ -8,9 +8,9 @@ export default function Newsletter({ data }) {
   return (
     <div id="newsletter" className="text-white px-10 bg-gradient-to-r from-[#E8A980] to-[#6A54EF] grid lg:grid-cols-2">
       <div className="flex flex-row justify-center order-2 md:order-1 mb-0">
-        <div className="newsletterIphones md:pt-20">
+        <div className="newsletterIphones md:py-10">
           <Image
-            width="682px"
+            width="630px"
             height="543px"
             src={media1}
             alt="iphones"
