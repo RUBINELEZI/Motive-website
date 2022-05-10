@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4ec9ba7-5c95-42c4-b820-c4a4329aec74" name="Changes" comment="connect with strapi">
+    <list default="true" id="c4ec9ba7-5c95-42c4-b820-c4a4329aec74" name="Changes" comment="build fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/aboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/aboutUs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/contactUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contactUs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/features.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/features.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/newsletter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/newsletter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ourStory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ourStory.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/swiper.jsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +145,7 @@
       <workItem from="1651236513202" duration="22437000" />
       <workItem from="1652103872671" duration="471000" />
       <workItem from="1652104937557" duration="349000" />
-      <workItem from="1652105290340" duration="581000" />
+      <workItem from="1652105290340" duration="1506000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1649337961223</created>
@@ -182,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652105015782</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="build fix">
+      <created>1652105972370</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652105972370</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +206,8 @@
     <MESSAGE value="strapi connect" />
     <MESSAGE value="strapi work work work" />
     <MESSAGE value="connect with strapi" />
-    <option name="LAST_COMMIT_MESSAGE" value="connect with strapi" />
+    <MESSAGE value="build fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="build fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
