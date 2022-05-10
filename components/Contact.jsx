@@ -1,13 +1,6 @@
-import { useEffect, useState } from "react";
-
 export default function Contact({ data }) {
   const content = data.data.attributes;
-  const [success, setSuccess] = useState(false);
-  useEffect(() => {
-    if (window.location.search.includes("success=true")) {
-      setSuccess(true);
-    }
-  }, []);
+
   return (
     <section id="contact" className="grid ">
       <div className="container px-6 py-10 mx-auto">
@@ -29,19 +22,12 @@ export default function Contact({ data }) {
               </p>
             </div>
 
-            <form name="contact" data-netlify="true" action="/?success=true"
-            >
+            <form name="contact" netlify>
               <p>
-                <label htmlFor="name">Name</label>
-                <input type="text" id="name" name="name" />
+                <label>Name <input type="text" name="name" /></label>
               </p>
               <p>
-                <label htmlFor="email">Email</label>
-                <input type="text" id="email" name="email" />
-              </p>
-              <p>
-                <label htmlFor="message">Message</label>
-                <textarea id="message" name="message"></textarea>
+                <label>Email <input type="email" name="email" /></label>
               </p>
               <p>
                 <button type="submit">Send</button>
