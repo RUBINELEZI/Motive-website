@@ -7,16 +7,10 @@ import media2 from "../public/media/media-2.jpg";
 import media3 from "../public/media/media-3.jpg";
 import media4 from "../public/media/media-4.jpg";
 import media5 from "../public/media/media-5.jpg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Features() {
   const [showMedia, setShowMedia] = useState("");
-
-  const [clickMedia, setClickMedia] = useState("");
-
-  useEffect(() => {
-    console.log(showMedia);
-  }, [showMedia]);
 
   function mediaHover() {
     if (showMedia === "media1") {

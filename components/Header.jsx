@@ -17,10 +17,6 @@ export default function Header() {
     document.body.style.overflow = "hidden";
   }, []);
 
-  const unlockScroll = useCallback(() => {
-    document.body.style.overflow = "";
-  }, []);
-
   return (
     <nav
       className="md:px-2 mb-3 font-semibold bg-[#282734] backdrop-filter backdrop-blur-lg bg-opacity-50 fixed top-0 z-50 w-full">
