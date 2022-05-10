@@ -23,6 +23,7 @@ export default function Contact({ data }) {
             </div>
 
             <form className="w-full max-w-lg bg-gray-700 bg-opacity-40 p-10 rounded-2xl" name="contact" method="POST"
+                  data-netlify-recaptcha="true"
                   data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
               <div className="flex flex-wrap -mx-3 mb-6">
@@ -77,6 +78,8 @@ export default function Contact({ data }) {
                 </div>
                 <div className="md:w-2/3" />
               </div>
+              <div data-netlify-recaptcha="true"></div>
+
             </form>
           </div>
         </div>
