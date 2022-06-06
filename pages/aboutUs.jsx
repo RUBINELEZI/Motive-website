@@ -64,7 +64,7 @@ export default function About({ data }) {
           <div>
             <div className="text-xl font-medium text-white">{content.Person_2.Name}</div>
             <p className="text-sm text-white">
-              {content.Person_3.Description}
+              {content.Person_2.Description}
             </p>
           </div>
         </div>
@@ -78,9 +78,9 @@ export default function About({ data }) {
             </div>
           </div>
           <div>
-            <div className="text-xl font-medium text-white">{content.Person_2.Name}</div>
+            <div className="text-xl font-medium text-white">{content.Person_3.Name}</div>
             <p className="text-sm text-white">
-              {content.Person_2.Description}
+              {content.Person_3.Description}
             </p>
           </div>
         </div>
