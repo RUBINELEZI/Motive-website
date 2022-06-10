@@ -19,6 +19,7 @@ export default function Home({ hero, ourStory, features, about, newsletter, cont
           <About data={about} />
         </div>
         <Newsletter data={newsletter} />
+        <input type="hidden" name="form-name" value="contact" />
         <Contact data={contact} />
         <Footer data={footer} />
       </Layout>
