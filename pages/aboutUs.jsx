@@ -9,7 +9,7 @@ export default function About({ data }) {
     <div id="aboutUs" className="container p-4 mx-auto flex flex-wrap flex-col md:flex-row h-full items-center ">
       <div className="bg-gradient-to-r from-gray-600 to-gray-700 w-full md:h-fit h- absolute m-0 opacity-50 left-0" />
       <div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
-        <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl text-[#fff] text-center mb-2">
+        <h1 className="text-3xl font-semibold capitalize lg:text-4xl text-[#fff] text-center mb-2">
           {content.Title}
         </h1>
 
