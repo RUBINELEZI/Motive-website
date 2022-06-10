@@ -21,7 +21,7 @@ export default function Newsletter({ data }) {
         </div>
       </div>
       <div className="flex flex-col justify-center mt-9 order-1 md:order-2">
-        <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl text-[#fff] ml-4">
+        <h1 className="text-3xl font-semibold capitalize lg:text-4xl text-[#fff] ml-4">
           {content.Title}
         </h1>
 

@@ -22,9 +22,8 @@ export default function Contact({ data }) {
               </p>
             </div>
 
-            <form className="w-full max-w-lg bg-gray-700 bg-opacity-40 p-10 rounded-2xl" name="contact" method="POST"
-                  data-netlify-recaptcha="true"
-                  data-netlify="true">
+            <form className="w-full max-w-lg bg-gray-700 bg-opacity-40 p-10 rounded-2xl"
+                  name="contact" netlify netlify-honeypot="bot-field" hidden>
               <input type="hidden" name="form-name" value="contact" />
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -49,7 +48,7 @@ export default function Contact({ data }) {
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
                   <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
-                         htmlFor="grid-password">
+                         htmlFor="email">
                     E-mail
                   </label>
                   <input
@@ -60,7 +59,7 @@ export default function Contact({ data }) {
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
                   <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
-                         htmlFor="grid-password">
+                         htmlFor="message">
                     Message
                   </label>
                   <textarea
@@ -78,9 +77,8 @@ export default function Contact({ data }) {
                 </div>
                 <div className="md:w-2/3" />
               </div>
-              <div data-netlify-recaptcha="true"></div>
-
             </form>
+
           </div>
         </div>
 
