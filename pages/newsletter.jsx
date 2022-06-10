@@ -1,10 +1,12 @@
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import NewsletterForm from "../components/NewsletterForm";
 
 export default function Newsletter({ data }) {
   const content = data.data.attributes;
   const media1 = content.Image.data.attributes.formats.medium.url;
+  const url = "https://app.us14.list-manage.com/subscribe/post?u=763d1f99d4cdb54542bb41a55&amp;id=8ddd0c7dc4";
+
   return (
     <div id="newsletter" className="text-white px-10 bg-gradient-to-r from-[#E8A980] to-[#6A54EF] grid lg:grid-cols-2">
       <div className="flex flex-row justify-center order-2 md:order-1 mb-0">
@@ -32,21 +34,40 @@ export default function Newsletter({ data }) {
         <p className="md:w-2/3 ml-4">
           {content.Description}
         </p>
-        <form className="ml-4">
-          <div
-            className="flex h-fit items-stretch mt-12 sm:max-w-md mb-8 sm:flex sm:items-center bg-[#4E4B66] rounded-xl pr-4">
-            <input
-              className="bg-[#4E4B66] rounded-lg text-base leading-none text-white p-3 w-4/5 border border-transparent focus:outline-none"
-              type="email"
-              placeholder="Enter your email."
-            />
-            <button
-              className="flex w-32 my-3 bg-[#A996FF] rounded-xl p-3 pt-[15px] text-base font-normal leading-none text-[#4E4B66]  focus:outline-none">
-              Subscribe
-              <FontAwesomeIcon icon={faArrowRight} className="ml-4" />
-            </button>
-          </div>
-        </form>
+        {/*<form className="ml-4"*/}
+        {/*      action="https://app.us14.list-manage.com/subscribe/post?u=763d1f99d4cdb54542bb41a55&amp;id=8ddd0c7dc4"*/}
+        {/*      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"*/}
+        {/*      novalidate>*/}
+        {/*  <div*/}
+        {/*    className="flex h-fit items-stretch mt-12 sm:max-w-md mb-8 sm:flex sm:items-center bg-[#4E4B66] rounded-xl pr-4">*/}
+        {/*    <input*/}
+        {/*      className="bg-[#4E4B66] rounded-lg text-base leading-none text-white p-3 w-4/5 border border-transparent focus:outline-none"*/}
+        {/*      type="email"*/}
+        {/*      placeholder="Enter your email."*/}
+        {/*      value="" name="EMAIL" id="mce-EMAIL"*/}
+        {/*    />*/}
+        {/*    <button*/}
+        {/*      className="flex w-32 my-3 bg-[#A996FF] rounded-xl p-3 pt-[15px] text-base font-normal leading-none text-[#4E4B66]  focus:outline-none"*/}
+        {/*      type="submit">*/}
+        {/*      Subscribe*/}
+        {/*      <FontAwesomeIcon icon={faArrowRight} className="ml-4" />*/}
+        {/*    </button>*/}
+        {/*  </div>*/}
+        {/*</form>*/}
+
+        <MailchimpSubscribe
+          url={url}
+          render={(props) => {
+            const { subscribe, status, message } = props || {};
+            return (
+              <NewsletterForm
+                status={status}
+                message={message}
+                onValidated={formData => subscribe(formData)}
+              />
+            );
+          }}
+        />
       </div>
     </div>
   );
