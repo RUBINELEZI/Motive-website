@@ -22,8 +22,15 @@ export default function Contact({ data }) {
               </p>
             </div>
 
+            <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+              <input type="text" name="name" />
+              <input type="email" name="email" />
+              <textarea name="message"></textarea>
+            </form>
+            
             <form className="w-full max-w-lg bg-gray-700 bg-opacity-40 p-10 rounded-2xl"
-                  name="contact" netlify>
+                  name="contact" data-netlify="true" method="POST">
+              <input type="hidden" name="form-name" value="contact" />
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
