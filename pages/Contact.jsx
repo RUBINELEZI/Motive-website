@@ -18,7 +18,7 @@ export default function Contact({ data }) {
               </div>
 
               <p className="md:w-2/3 text-gray-200 mb-8 text-center">
-                {content.Description}
+                {content.Description} 👋
               </p>
             </div>
 
@@ -48,7 +48,7 @@ export default function Contact({ data }) {
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
                   <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
-                         htmlFor="grid-password">
+                         htmlFor="email">
                     E-mail
                   </label>
                   <input
@@ -59,7 +59,7 @@ export default function Contact({ data }) {
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
                   <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
-                         htmlFor="grid-password">
+                         htmlFor="message">
                     Message
                   </label>
                   <textarea
@@ -77,9 +77,8 @@ export default function Contact({ data }) {
                 </div>
                 <div className="md:w-2/3" />
               </div>
-              <div data-netlify-recaptcha="true"></div>
-
             </form>
+
           </div>
         </div>
 

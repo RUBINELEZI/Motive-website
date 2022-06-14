@@ -11,6 +11,8 @@ import Contact from "./Contact";
 export default function Home({ hero, ourStory, features, about, newsletter, contact, footer }) {
   return (
     <>
+      <input type="hidden" name="form-name" value="contact" />
+
       <Layout>
         <Hero data={hero} />
         <OurStory data={ourStory} />
@@ -20,6 +22,8 @@ export default function Home({ hero, ourStory, features, about, newsletter, cont
         </div>
         <Newsletter data={newsletter} />
         <Contact data={contact} />
+        <input type="hidden" name="form-name" value="contact" />
+
         <Footer data={footer} />
       </Layout>
       <ScrollToTop smooth color="#121212" height="20" width="40"
