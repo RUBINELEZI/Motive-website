@@ -7,11 +7,13 @@ import { useState } from "react";
 export default function Features({ data }) {
   const [showMedia, setShowMedia] = useState("");
   const content = data.data.attributes;
-  const media1 = content.Feature_1.Feature_icon.data.attributes.formats.medium.url;
-  const media2 = content.Feature_2.Feature_icon.data.attributes.formats.medium.url;
-  const media3 = content.Feature_3.Feature_icon.data.attributes.formats.medium.url;
-  const media4 = content.Feature_4.Feature_icon.data.attributes.formats.medium.url;
-  const media5 = content.Feature_5.Feature_icon.data.attributes.formats.medium.url;
+  const media1 = content.Feature_1.Feature_icon.data.attributes.formats.large.url;
+  const media2 = content.Feature_2.Feature_icon.data.attributes.formats.large.url;
+  const media3 = content.Feature_3.Feature_icon.data.attributes.formats.large.url;
+  const media4 = content.Feature_4.Feature_icon.data.attributes.formats.large.url;
+  const media5 = content.Feature_5.Feature_icon.data.attributes.formats.large.url;
+
+  console.log(content.Feature_1.Feature_icon.data.attributes.formats);
 
   function mediaHover() {
     if (showMedia === "media1") {
@@ -44,7 +46,7 @@ export default function Features({ data }) {
               className="space-y-3 md:mr-3 cursor-pointer"
               onMouseOver={() => setShowMedia("media1")}
             >
-              <span className="inline-block p-3  rounded-xl text-[#fff] bg-[#6B21A7]">
+              <span className="inline-block p-3 rounded-xl text-[#fff] bg-[#6B21A7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -128,7 +130,7 @@ export default function Features({ data }) {
                       width={300}
                       height={600}
                       alt="mockup"
-                      className="rounded-[32px] object-cover"
+                      className="rounded-[32px] max-h-fit"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
@@ -137,7 +139,7 @@ export default function Features({ data }) {
                       width={300}
                       height={600}
                       alt="mockup"
-                      className="rounded-[32px] object-cover"
+                      className="rounded-[32px] max-h-fit"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
@@ -146,7 +148,7 @@ export default function Features({ data }) {
                       width={300}
                       height={600}
                       alt="mockup"
-                      className="rounded-[32px] object-cover"
+                      className="rounded-[32px] max-h-fit"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
@@ -155,7 +157,7 @@ export default function Features({ data }) {
                       width={300}
                       height={600}
                       alt="mockup"
-                      className="rounded-[32px] object-cover"
+                      className="rounded-[32px] max-h-fit"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
@@ -164,7 +166,7 @@ export default function Features({ data }) {
                       width={300}
                       height={600}
                       alt="mockup"
-                      className="rounded-[32px] object-cover"
+                      className="rounded-[32px] max-h-fit"
                     />
                   </SwiperSlide>
                 </Swiper>
@@ -178,7 +180,7 @@ export default function Features({ data }) {
                   width={300}
                   height={600}
                   alt="mockup"
-                  className="rounded-[32px] object-cover"
+                  className="rounded-[32px] max-h-fit"
                 />
               </div>
             </div>

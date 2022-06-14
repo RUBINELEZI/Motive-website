@@ -18,7 +18,7 @@ export default function Contact({ data }) {
               </div>
 
               <p className="md:w-2/3 text-gray-200 mb-8 text-center">
-                {content.Description}
+                {content.Description} 👋
               </p>
             </div>
 
@@ -27,7 +27,7 @@ export default function Contact({ data }) {
               <input type="email" name="email" />
               <textarea name="message"></textarea>
             </form>
-            
+
             <form className="w-full max-w-lg bg-gray-700 bg-opacity-40 p-10 rounded-2xl"
                   name="contact" data-netlify="true" method="POST">
               <input type="hidden" name="form-name" value="contact" />
