@@ -67,9 +67,9 @@ export default function Features({ data }) {
                 {content.Feature_1.Feature_title}
               </h1>
 
-              <p className="text-gray-400 ">
+              <span className="text-gray-400 ">
                 {content.Feature_1.Feature_Description}
-              </p>
+              </span>
             </div>
 
             <div

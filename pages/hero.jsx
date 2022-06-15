@@ -28,39 +28,16 @@ export default function Hero({ data }) {
         </p>
 
         <div className="flex flex-col md:flex-row mb-10 justify-center items-center lg:items-start">
-          <button
-            className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+          <a href="/signUp"
+             className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
             Sign Up
-          </button>
+          </a>
           <button
             className="text-sm bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
             Log In
             <FontAwesomeIcon icon={faArrowRight} className="ml-4" />
           </button>
         </div>
-
-        {/*<form className="bg-gray-900  opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4 z-10">*/}
-        {/*  <div className="mb-4">*/}
-        {/*    <label className="block text-blue-300 py-2 font-bold mb-2">*/}
-        {/*      Signup for our newsletter*/}
-        {/*    </label>*/}
-        {/*    <input*/}
-        {/*      className="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"*/}
-        {/*      id="emailaddress"*/}
-        {/*      type="text"*/}
-        {/*      placeholder="you@somewhere.com"*/}
-        {/*    />*/}
-        {/*  </div>*/}
-
-        {/*  <div className="flex items-center justify-between pt-4">*/}
-        {/*    <button*/}
-        {/*      className="bg-purple-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"*/}
-        {/*      type="button"*/}
-        {/*    >*/}
-        {/*      Sign Up*/}
-        {/*    </button>*/}
-        {/*  </div>*/}
-        {/*</form>*/}
       </div>
       <img
         className="w-screen mx-auto absolute duration-700 ease-in-out  left-0 top-1/3 opacity-0 md:opacity-100 z-0"
@@ -79,7 +56,7 @@ export default function Hero({ data }) {
           <Image
             className="mx-auto w-full md:w-4/5 h-96 transform -rotate-left-6 transition hover:scale-95 duration-700 ease-in-out z-20 hover:rotate-6"
             src={
-              
+
               data.data.attributes.Hero_imge.data.attributes.formats.medium.url
             }
             alt="elipse"
