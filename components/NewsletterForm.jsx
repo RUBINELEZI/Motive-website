@@ -77,6 +77,7 @@ const NewsletterForm = ({ status, message, onValidated }) => {
           className="flex w-32 my-3 bg-[#A996FF] rounded-xl p-3 pt-[15px] text-base font-normal leading-none text-[#4E4B66]  focus:outline-none"
           type="submit"
           onChange={(event) => setEmail(event?.target?.value ?? "")}
+          onClick={() => handleFormSubmit()}
         >
           Subscribe
           <FontAwesomeIcon icon={faArrowRight} className="ml-4" />

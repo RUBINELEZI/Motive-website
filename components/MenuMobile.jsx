@@ -3,6 +3,7 @@ import { Transition } from "@headlessui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { HeaderData } from "../data/HeaderData";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 
 export default function MenuMobile({ isOpen, handleClick }) {
@@ -58,14 +59,21 @@ export default function MenuMobile({ isOpen, handleClick }) {
               ))}
             </ul>
             <div className="flex flex-col md:flex-row">
-              <button
-                className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
-                Motive Creator Labs
-              </button>
-              <button
-                className="text-sm bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
-                Motive For Business
-              </button>
+              <Link href={"404"}>
+                <button
+                  className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+                  Motive Creator Labs
+                </button>
+              </Link>
+
+
+              <Link href={"404"}>
+                <button
+                  className="text-sm bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+                  Motive For Business
+                </button>
+              </Link>
+
             </div>
           </div>
         </div>

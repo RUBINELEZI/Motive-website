@@ -28,12 +28,12 @@ export default function Contact({ data }) {
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
-                         htmlFor="grid-first-name">
+                         htmlFor="grid- first-name">
                     First Name
                   </label>
                   <input
                     className="appearance-none block w-full bg-gray-600 text-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-500"
-                    id="grid-first-name" type="text" placeholder="" name="name" />
+                    id="grid-first-name" type="text" placeholder="" name="name" required />
                 </div>
                 <div className="w-full md:w-1/2 px-3">
                   <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
@@ -42,7 +42,7 @@ export default function Contact({ data }) {
                   </label>
                   <input
                     className="appearance-none block w-full bg-gray-600 text-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-500"
-                    id="grid-last-name" type="text" placeholder="" name="lastName" />
+                    id="grid-last-name" type="text" placeholder="" name="lastName" required />
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mb-6">
@@ -64,7 +64,7 @@ export default function Contact({ data }) {
                   </label>
                   <textarea
                     className="no-resize appearance-none block w-full bg-gray-600 text-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-500 focus:border-gray-500 h-48 resize-none"
-                    id="message" name="message" />
+                    id="message" name="message" required />
                 </div>
               </div>
               <div className="md:flex md:items-center">
