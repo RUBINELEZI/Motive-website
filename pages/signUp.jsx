@@ -27,7 +27,7 @@ export default function SignUp({ data }) {
         data: values
       };
 
-    const res = await fetch(`http://localhost:1337/api/sign-ups`, {
+    const res = await fetch(`https://motive-admin.herokuapp.com/api/sign-ups`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
