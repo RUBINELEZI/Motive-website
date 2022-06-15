@@ -67,6 +67,7 @@ export default function SignUp({ data }) {
                             className="bg-gray-600 text-gray-200 rounded py-2 px-3 leading-tight focus:outline-none focus:bg-gray-500 focus:border-gray-500 block w-full">
                       <option value="M">Male</option>
                       <option value="F">Female</option>
+                      <option value="F">Others</option>
                     </select>
                   </div>
                 </div>
