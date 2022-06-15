@@ -75,13 +75,9 @@ export default function SignUp({ data }) {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     <label htmlFor="city"
                            className="block mb-2 text-sm font-medium text-gray-400">City</label>
-                    <select id="city"
-                            className="bg-gray-600 text-gray-200 rounded py-2 px-3 leading-tight focus:outline-none focus:bg-gray-500 focus:border-gray-500 block w-full">
-                      <option value="1">City 1</option>
-                      <option value="2">City 2</option>
-                      <option value="3">City 3</option>
-                      <option value="4">City 4</option>
-                    </select>
+                    <input
+                      className="appearance-none block w-full bg-gray-600 text-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-500"
+                      id="grid-last-name" type="text" placeholder="" name="lastName" />
                   </div>
                   <div className="w-full md:w-1/2 px-3">
                     <label htmlFor="music"

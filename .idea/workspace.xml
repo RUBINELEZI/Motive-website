@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4ec9ba7-5c95-42c4-b820-c4a4329aec74" name="Changes" comment="contact_form">
-      <change afterPath="$PROJECT_DIR$/pages/signUp.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Contact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/features.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/features.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hero.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="c4ec9ba7-5c95-42c4-b820-c4a4329aec74" name="Changes" comment="contact_form" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,7 +139,7 @@
       <workItem from="1652175303495" duration="14000" />
       <workItem from="1652175328658" duration="3921000" />
       <workItem from="1654867462345" duration="1790000" />
-      <workItem from="1655295150991" duration="1325000" />
+      <workItem from="1655295150991" duration="1474000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1649337961223</created>
@@ -238,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652196846572</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="contact_form">
+      <created>1655296498780</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1655296498780</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +262,8 @@
     <MESSAGE value="navbar fix" />
     <MESSAGE value="form" />
     <MESSAGE value="form test" />
-    <option name="LAST_COMMIT_MESSAGE" value="form test" />
+    <MESSAGE value="contact_form" />
+    <option name="LAST_COMMIT_MESSAGE" value="contact_form" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
