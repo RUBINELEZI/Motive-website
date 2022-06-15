@@ -67,9 +67,10 @@ export default function Features({ data }) {
                 {content.Feature_1.Feature_title}
               </h1>
 
-              <span className="text-gray-400 ">
-                {content.Feature_1.Feature_Description}
-              </span>
+              <div className="text-gray-400 "
+                   dangerouslySetInnerHTML={{ __html: content.Feature_1.Feature_Description }}>
+
+              </div>
             </div>
 
             <div
@@ -103,9 +104,10 @@ export default function Features({ data }) {
                 {content.Feature_2.Feature_title}
               </h1>
 
-              <p className="text-gray-400 ">
-                {content.Feature_2.Feature_Description}
-              </p>
+              <div className="text-gray-400 "
+                   dangerouslySetInnerHTML={{ __html: content.Feature_2.Feature_Description }}>
+
+              </div>
             </div>
           </div>
 
@@ -211,9 +213,10 @@ export default function Features({ data }) {
                 {content.Feature_3.Feature_title}
               </h1>
 
-              <p className="text-gray-400 ">
-                {content.Feature_3.Feature_Description}
-              </p>
+              <div className="text-gray-400 "
+                   dangerouslySetInnerHTML={{ __html: content.Feature_3.Feature_Description }}>
+
+              </div>
             </div>
 
             <div
@@ -240,9 +243,10 @@ export default function Features({ data }) {
                 {content.Feature_4.Feature_title}
               </h1>
 
-              <p className="text-gray-400 ">
-                {content.Feature_4.Feature_Description}
-              </p>
+              <div className="text-gray-400 "
+                   dangerouslySetInnerHTML={{ __html: content.Feature_4.Feature_Description }}>
+
+              </div>
             </div>
           </div>
         </div>
@@ -270,9 +274,9 @@ export default function Features({ data }) {
             {content.Feature_5.Feature_title}
           </h1>
 
-          <p className="text-gray-400 ">
-            {content.Feature_5.Feature_Description}
-          </p>
+          <div className="text-gray-400 " dangerouslySetInnerHTML={{ __html: content.Feature_5.Feature_Description }}>
+
+          </div>
         </div>
       </div>
     </section>
