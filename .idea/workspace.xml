@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4ec9ba7-5c95-42c4-b820-c4a4329aec74" name="Changes" comment="sigunp page">
+    <list default="true" id="c4ec9ba7-5c95-42c4-b820-c4a4329aec74" name="Changes" comment="signup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/signUp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/signUp.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hero.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +143,7 @@
       <workItem from="1652175328658" duration="3921000" />
       <workItem from="1654867462345" duration="1790000" />
       <workItem from="1655295150991" duration="2638000" />
+      <workItem from="1655366272490" duration="595000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1649337961223</created>
@@ -256,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655302815047</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="signup">
+      <created>1655303269264</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1655303269264</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +290,8 @@
     <MESSAGE value="contact_form" />
     <MESSAGE value="sign up page" />
     <MESSAGE value="sigunp page" />
-    <option name="LAST_COMMIT_MESSAGE" value="sigunp page" />
+    <MESSAGE value="signup" />
+    <option name="LAST_COMMIT_MESSAGE" value="signup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
