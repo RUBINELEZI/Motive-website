@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <nav
       className="md:px-2 mb-3 font-semibold bg-[#282734] backdrop-filter backdrop-blur-lg bg-opacity-50 fixed top-0 z-50 w-full">
-      <div className="flex items-center justify-between h-16 lg:px-[0.8rem] xl:px-[6rem]">
+      <div className="flex items-center justify-around h-16 lg:px-[0.8rem] xl:px-[6rem]">
         <div className="" onClick={() => scrollDown("hero")}>
           <Image src={logo} alt="logo" width="50" height="20" quality={100} />
           <span

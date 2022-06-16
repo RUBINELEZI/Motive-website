@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4ec9ba7-5c95-42c4-b820-c4a4329aec74" name="Changes" comment="sign up page">
-      <change afterPath="$PROJECT_DIR$/public/logocolor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/motive(white).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/motive.svg" afterDir="false" />
+    <list default="true" id="c4ec9ba7-5c95-42c4-b820-c4a4329aec74" name="Changes" comment="logo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.jsx" afterDir="false" />
     </list>
@@ -146,7 +143,7 @@
       <workItem from="1652175328658" duration="3921000" />
       <workItem from="1654867462345" duration="1790000" />
       <workItem from="1655295150991" duration="3055000" />
-      <workItem from="1655391093697" duration="1709000" />
+      <workItem from="1655391093697" duration="1961000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1649337961223</created>
@@ -260,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655298872883</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="logo">
+      <created>1655418809773</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1655418809773</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +289,8 @@
     <MESSAGE value="form test" />
     <MESSAGE value="contact_form" />
     <MESSAGE value="sign up page" />
-    <option name="LAST_COMMIT_MESSAGE" value="sign up page" />
+    <MESSAGE value="logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="logo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
