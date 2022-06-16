@@ -1,5 +1,42 @@
+import { useState } from "react";
+
 export default function SignUp({ data }) {
   const content = data.data.attributes;
+
+  const [values, setValues] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    age: 0,
+    gender: "",
+    city: "",
+    streamingService: "",
+    smpartphone: ""
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setValues({ ...values, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const data =
+      {
+        data: values
+      };
+
+    const res = await fetch(`https://motive-admin.herokuapp.com/api/sign-ups`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+
+    });
+  };
+
 
   return (
     <section className="relative py-20 2xl:py-40 bg-gray-800 overflow-hidden">
@@ -25,7 +62,7 @@ export default function SignUp({ data }) {
                     </label>
                     <input
                       className="appearance-none block w-full bg-gray-600 text-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-500"
-                      id="grid-first-name" type="text" placeholder="" name="name" />
+                      id="grid-first-name" type="text" placeholder="" name="firstName" onChange={handleInputChange} />
                   </div>
                   <div className="w-full md:w-1/2 px-3">
                     <label className="block uppercase tracking-wide text-gray-400 text-xs font-medium mb-2"
@@ -34,7 +71,7 @@ export default function SignUp({ data }) {
                     </label>
                     <input
                       className="appearance-none block w-full bg-gray-600 text-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-500"
-                      id="grid-last-name" type="text" placeholder="" name="lastName" />
+                      id="grid-last-name" type="text" placeholder="" name="lastName" onChange={handleInputChange} />
                   </div>
                 </div>
 
@@ -46,7 +83,7 @@ export default function SignUp({ data }) {
                     </label>
                     <input
                       className="appearance-none block w-full bg-gray-600 text-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-500 focus:border-gray-500"
-                      id="email" type="email" name="email" />
+                      id="email" type="email" name="email" onChange={handleInputChange} />
                   </div>
                 </div>
 
@@ -58,16 +95,19 @@ export default function SignUp({ data }) {
                     </label>
                     <input
                       className="appearance-none block w-full bg-gray-600 text-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-500 focus:border-gray-500"
-                      id="number" type="number" name="age" />
+                      id="number" type="number" name="age" onChange={handleInputChange} />
                   </div>
                   <div className="w-full md:w-1/2 px-3">
                     <label htmlFor="gender"
                            className="block mb-2 text-sm font-medium text-gray-400">Gender</label>
                     <select id="gender"
+                            onChange={handleInputChange}
+                            name={"gender"}
                             className="bg-gray-600 text-gray-200 rounded py-2 px-3 leading-tight focus:outline-none focus:bg-gray-500 focus:border-gray-500 block w-full">
-                      <option value="M">Male</option>
-                      <option value="F">Female</option>
-                      <option value="F">Others</option>
+                      <option value="">Chose gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Others">Others</option>
                     </select>
                   </div>
                 </div>
@@ -78,18 +118,21 @@ export default function SignUp({ data }) {
                            className="block mb-2 text-sm font-medium text-gray-400">City</label>
                     <input
                       className="appearance-none block w-full bg-gray-600 text-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-500"
-                      id="grid-last-name" type="text" placeholder="" name="lastName" />
+                      id="grid-last-name" type="text" placeholder="" name="city" onChange={handleInputChange} />
                   </div>
                   <div className="w-full md:w-1/2 px-3">
                     <label htmlFor="music"
                            className="block mb-2 text-sm font-medium text-gray-400">Music streaming service</label>
                     <select id="music"
-                            className="bg-gray-600 text-gray-200 rounded py-2 px-3 leading-tight focus:outline-none focus:bg-gray-500 focus:border-gray-500 block w-full">
-                      <option value="S">Spotify</option>
-                      <option value="AM">Apple music</option>
-                      <option value="A">Amazon music</option>
-                      <option value="T">Tidal</option>
-                      <option value="YM">Youtube music</option>
+                            name={"streamingService"}
+                            className="bg-gray-600 text-gray-200 rounded py-2 px-3 leading-tight focus:outline-none focus:bg-gray-500 focus:border-gray-500 block w-full"
+                            onChange={handleInputChange}>
+                      <option value="">Streaming Platform</option>
+                      <option value="Spotify">Spotify</option>
+                      <option value="Apple music">Apple music</option>
+                      <option value="Amazon music">Amazon music</option>
+                      <option value="Tidal">Tidal</option>
+                      <option value="Youtube music">Youtube music</option>
                     </select>
                   </div>
                 </div>
@@ -100,13 +143,15 @@ export default function SignUp({ data }) {
                 </label>
                 <div className="flex flex-wrap -mx-3 mb-6 ml-1">
                   <div className="flex items-center mr-4">
-                    <input id="inline-radio" type="radio" value="" name="inline-radio-group"
+                    <input onChange={handleInputChange} id="inline-radio" type="radio" value="IOS"
+                           name="smpartphone"
                            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
                     <label htmlFor="inline-radio"
                            className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">IOS</label>
                   </div>
                   <div className="flex items-center mr-4">
-                    <input id="inline-2-radio" type="radio" value="" name="inline-radio-group"
+                    <input onChange={handleInputChange} id="inline-2-radio" type="radio" value="Android"
+                           name="smpartphone"
                            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
                     <label htmlFor="inline-2-radio"
                            className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Android</label>
@@ -118,7 +163,7 @@ export default function SignUp({ data }) {
                   <div className="md:w-1/3">
                     <button
                       className="shadow bg-purple-400 hover:bg-purple-500 focus:shadow-outline focus:outline-none text-white py-1 px-3 rounded"
-                      type="submit">
+                      type="submit" onClick={handleSubmit}>
                       Send
                     </button>
                   </div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function Hero({ data }) {
   return (
@@ -28,15 +29,20 @@ export default function Hero({ data }) {
         </p>
 
         <div className="flex flex-col md:flex-row mb-10 justify-center items-center lg:items-start">
-          <a href="/signUp"
-             className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
-            Sign Up
-          </a>
-          <button
-            className="text-sm bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
-            Log In
-            <FontAwesomeIcon icon={faArrowRight} className="ml-4" />
-          </button>
+          <Link href="/signUp">
+            <a
+              className="text-sm md:mr-2 md:mb-0 mb-2 bg-transparent hover:bg-purple-400 text-purple-400 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+              Sign Up
+            </a>
+          </Link>
+
+          <Link href={'/404'}>
+            <button
+              className="text-sm bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
+              Log In
+              <FontAwesomeIcon icon={faArrowRight} className="ml-4" />
+            </button>
+          </Link>
         </div>
       </div>
       <img
