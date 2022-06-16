@@ -3,6 +3,8 @@ import { useCallback, useState } from "react";
 import { HeaderData } from "../data/HeaderData.jsx";
 import MenuMobile from "./MenuMobile.jsx";
 import Link from "next/link";
+import logo from "../public/motive.svg";
+import Image from "next/image";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +25,7 @@ export default function Header() {
       className="md:px-2 mb-3 font-semibold bg-[#282734] backdrop-filter backdrop-blur-lg bg-opacity-50 fixed top-0 z-50 w-full">
       <div className="flex items-center justify-between h-16 lg:px-[0.8rem] xl:px-[6rem]">
         <div className="" onClick={() => scrollDown("hero")}>
-          {/* <Image src={logo} alt="logo" width="20" height="20" quality={100}/> */}
+          <Image src={logo} alt="logo" width="50" height="20" quality={100} />
           <span
             className="bg-clip-text cursor-pointer text-transparent bg-gradient-to-r from-pink-500 to-purple-500 text-2xl ml-3">
               MOTIVE
