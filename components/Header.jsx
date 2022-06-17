@@ -3,7 +3,7 @@ import { useCallback, useState } from "react";
 import { HeaderData } from "../data/HeaderData.jsx";
 import MenuMobile from "./MenuMobile.jsx";
 import Link from "next/link";
-import logo from "../public/motive.svg";
+import logo from "../public/motive.png";
 import Image from "next/image";
 
 export default function Header() {

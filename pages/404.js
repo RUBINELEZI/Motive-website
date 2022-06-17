@@ -127,8 +127,8 @@ export default function FourOhFour() {
                       d="M194.04 209.64l-3.6 7.25h-13.41l3.6-7.25zM224.24 209.64l-3.6 7.25h-13.4l3.59-7.25zM254.43 209.64l-3.59 7.25h-13.4l3.59-7.25zM284.63 209.64l-3.6 7.25h-13.39l3.59-7.25zM314.73 209.84l-3.5 7.05h-13.39l3.59-7.25z" />
                 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="242.075" y1="248.234" x2="242.075"
                                 y2="224.179">
-                  <stop offset="0" stop-color="#fff" />
-                  <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                  <stop offset="0" stopColor="#fff" />
+                  <stop offset="1" stopColor="#fff" stopOpacity="0" />
                 </linearGradient>
                 <path className="st17" d="M171.96 222.56H312.2v14.94H171.96z" />
                 <ellipse transform="rotate(-9.249 191.082 198.565)" className="st6" cx="191.05" cy="198.49" rx="9.23"
