@@ -20,5 +20,5 @@ export default function Layout({ title, keywords, description, children }) {
 Layout.defaultProps = {
   title: "Motive",
   keywords: "Keywords for motive",
-  description: "Motive",
+  description: "Motive"
 };

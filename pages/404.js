@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../public/motive.png";
 
 export default function FourOhFour() {
   return <>
@@ -7,20 +9,26 @@ export default function FourOhFour() {
     </style>
     <div className="min-w-screen min-h-screen bg-purple-800-100 flex items-center p-5 lg:p-20 overflow-hidden relative">
       <div
-        className="flex-1 min-h-full min-w-full rounded-3xl bg-gray-600  shadow-xl p-10 lg:p-20 text-gray-800 relative md:flex items-center text-center md:text-left">
+        className="flex-1 min-h-full min-w-full rounded-3xl bg-[#363440] shadow-xl p-10 lg:p-20 text-gray-800 relative md:flex items-center text-center md:text-left">
         <div className="w-full md:w-1/2">
           <div className="mb-10 lg:mb-20">
-            MOTIVE
+            <div className="" onClick={() => scrollDown("hero")}>
+              <Image src={logo} alt="logo" width="50" height="20" quality={100} />
+              <span
+                className="bg-clip-text font-bold cursor-pointer text-transparent bg-gradient-to-r from-pink-500 to-purple-500 text-2xl ml-3">
+              MOTIVE
+            </span>
+            </div>
           </div>
           <div className="mb-10 md:mb-20 text-white font-light">
-            <h1 className="font-black uppercase text-3xl lg:text-5xl text-yellow-500 mb-10">You seem to be lost!</h1>
+            <h1 className="font-black uppercase text-3xl lg:text-5xl text-[#CA4ECA] mb-10">You seem to be lost!</h1>
             <p>Page is under construction</p>
             <p>Use the Go Back button below.</p>
           </div>
           <div className="mb-20 md:mb-0">
             <Link href={"/"}>
               <button
-                className="text-lg font-light outline-none focus:outline-none transform transition-all hover:scale-110 text-yellow-500 hover:text-yellow-600">
+                className="text-lg font-light outline-none focus:outline-none transform transition-all hover:scale-110 text-[#CA4ECA] hover:text-yellow-600">
                 <i className="mdi mdi-arrow-left mr-2"></i>Go Back
               </button>
             </Link>
