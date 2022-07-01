@@ -31,8 +31,7 @@ export default function Newsletter({ data }) {
           <span className="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800" />
         </div>
 
-        <p className="md:w-2/3 ml-4">
-          {content.Description}
+        <p className="md:w-2/3 ml-4" dangerouslySetInnerHTML={{ __html: content.Description }}>
         </p>
         {/*<form className="ml-4"*/}
         {/*      action="https://app.us14.list-manage.com/subscribe/post?u=763d1f99d4cdb54542bb41a55&amp;id=8ddd0c7dc4"*/}

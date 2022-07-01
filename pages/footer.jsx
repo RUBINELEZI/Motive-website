@@ -32,8 +32,7 @@ export default function Footer({ data }) {
           ">
               MOTIVE
             </h6>
-            <p>
-              {content.short_description}
+            <p dangerouslySetInnerHTML={{ __html: content.short_description }}>
             </p>
             <div className="flex mt-12">
               <a href={content.socialMedia.facebook} className="mr-6 text-gray-600 hover:text-purple-600">

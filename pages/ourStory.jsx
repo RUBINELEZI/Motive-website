@@ -27,8 +27,7 @@ export default function OurStory({ data }) {
                 <span className="inline-block w-3 h-1 ml-1 rounded-full bg-purple-800" />
                 <span className="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800" />
               </div>
-              <p className="text-gray-400 -text-width-20">
-                {content.First_text}
+              <p className="text-gray-400 -text-width-20" dangerouslySetInnerHTML={{ __html: content.First_text }}>
               </p>
               <div className="w-full z-10 overflow-hidden">
                 <Image className="mx-auto w-full md:w-4/5" src={lImage}
@@ -47,8 +46,7 @@ export default function OurStory({ data }) {
                        height={600} alt="image" />
               </div>
 
-              <p className="text-gray-400 ">
-                {content.Right_Text}
+              <p className="text-gray-400 " dangerouslySetInnerHTML={{ __html: content.Right_Text }}>
               </p>
             </div>
           </div>

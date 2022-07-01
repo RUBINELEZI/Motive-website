@@ -24,8 +24,9 @@ export default function Hero({ data }) {
           <span className="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800" />
         </div>
         <p
-          className="leading-normal text-base md:text-1xl mb-8 text-center lg:text-left z-10 text-slate-400 font-normal">
-          {data.data.attributes.Description}
+          className="leading-normal text-base md:text-1xl mb-8 text-center lg:text-left z-10 text-slate-400 font-normal"
+          dangerouslySetInnerHTML={{ __html: data.data.attributes.Description }}>
+
         </p>
 
         <div className="flex flex-col md:flex-row mb-10 justify-center items-center lg:items-start">

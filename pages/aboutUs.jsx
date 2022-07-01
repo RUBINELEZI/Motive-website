@@ -20,8 +20,8 @@ export default function About({ data }) {
         </div>
 
         <p
-          className="leading-normal text-base md:text-1xl text-md mb-8 text-center md:text-left z-10 text-slate-400 font-normal">
-          {content.Description}
+          className="leading-normal text-base md:text-1xl text-md mb-8 text-center md:text-left z-10 text-slate-400 font-normal"
+          dangerouslySetInnerHTML={{ __html: content.Description }}>
         </p>
       </div>
       <img

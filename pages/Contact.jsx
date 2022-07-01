@@ -17,8 +17,8 @@ export default function Contact({ data }) {
                 <span className="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800" />
               </div>
 
-              <p className="md:w-2/3 text-gray-200 mb-8 text-center">
-                {content.Description} 👋
+              <p className="md:w-2/3 text-gray-200 mb-8 text-center"
+                 dangerouslySetInnerHTML={{ __html: content.Description }}>
               </p>
             </div>
 
