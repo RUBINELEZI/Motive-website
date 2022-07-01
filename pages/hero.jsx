@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 export default function Hero({ data }) {
@@ -37,11 +35,10 @@ export default function Hero({ data }) {
             </a>
           </Link>
 
-          <Link href={'/404'}>
+          <Link href={"/404"}>
             <button
               className="text-sm bg-purple-400 hover:bg-purple-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple-400 hover:border-transparent rounded-lg">
               Log In
-              <FontAwesomeIcon icon={faArrowRight} className="ml-4" />
             </button>
           </Link>
         </div>

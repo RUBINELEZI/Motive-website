@@ -7,6 +7,7 @@ import Newsletter from "./newsletter";
 import Footer from "./footer";
 import ScrollToTop from "react-scroll-to-top";
 import Contact from "./Contact";
+import Head from "next/head";
 
 export default function Home({ hero, ourStory, features, about, newsletter, contact, footer }) {
   return (
@@ -14,6 +15,16 @@ export default function Home({ hero, ourStory, features, about, newsletter, cont
       <input type="hidden" name="form-name" value="contact" />
 
       <Layout>
+        <Head>
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+          <meta name="msapplication-TileColor" content="#da532c" />
+          <meta name="theme-color" content="#ffffff" />
+          <title>Motive</title>
+        </Head>
         <Hero data={hero} />
         <OurStory data={ourStory} />
         <div className="bg-gradient-to-r from-[#343340] to-gray-800 opacity-85">
