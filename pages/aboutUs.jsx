@@ -38,11 +38,11 @@ export default function About({ data }) {
 
       <div className="w-full  xl:w-3/5 md:p-12 overflow-hidden">
         <div
-          className="aboutUsCard   p-6 m-3 max-w-sm mx-auto bg-gradient-to-r from-gray-600 to-gray-700 rounded-xl shadow-md flex items-center space-x-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
+          className="aboutUsCard border-r-4 border-purple-500 p-6 m-3 max-w-sm mx-auto bg-gradient-to-r from-gray-600 to-gray-700 rounded-xl shadow-md flex items-center space-x-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
           <div className="shrink-0">
             <div
-              className="m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-blue-500 text-xl text-white uppercase">
-              <Image src={media1} layout={"fill"} alt="person" className="rounded-full" />
+              className="m-1 mr-2 w-12 h-12 relative flex justify-center items-center  text-xl text-white uppercase">
+              <Image src={media1} layout={"fill"} alt="person" className={"rounded-md"} />
             </div>
           </div>
           <div>
@@ -54,11 +54,11 @@ export default function About({ data }) {
         </div>
 
         <div
-          className="aboutUsCard p-6 m-3 max-w-sm mx-auto bg-gradient-to-r from-gray-600 to-gray-700 rounded-xl shadow-md flex items-center space-x-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
+          className="aboutUsCard p-6 m-3 max-w-sm mx-auto bg-gradient-to-r from-gray-600 border-r-4 border-amber-400 to-gray-700 rounded-xl shadow-md flex items-center space-x-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
           <div className="shrink-0">
             <div
-              className="m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-blue-500 text-xl text-white uppercase">
-              <Image src={media2} layout={"fill"} alt="person" className="rounded-full" />
+              className="m-1 mr-2 w-12 h-12 relative flex justify-center items-center   text-xl text-white uppercase">
+              <Image src={media2} layout={"fill"} alt="person" className={"rounded-md"} />
             </div>
           </div>
           <div>
@@ -70,11 +70,11 @@ export default function About({ data }) {
         </div>
 
         <div
-          className="aboutUsCard p-6 m-3 max-w-sm mx-auto bg-gradient-to-r from-gray-600 to-gray-700 rounded-xl shadow-md flex items-center space-x-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
+          className="aboutUsCard p-6 m-3 max-w-sm mx-auto bg-gradient-to-r from-gray-600 to-gray-700 rounded-xl border-r-4 border-amber-400 shadow-md flex items-center space-x-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
           <div className="shrink-0">
             <div
-              className="m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-blue-500 text-xl text-white uppercase">
-              <Image src={media3} layout={"fill"} alt="person" className="rounded-full" />
+              className="m-1 mr-2 w-12 h-12 relative flex justify-center rounded-xl items-center   text-xl text-white uppercase">
+              <Image src={media3} layout={"fill"} alt="person" className={"rounded-md"} />
             </div>
           </div>
           <div>

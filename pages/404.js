@@ -21,9 +21,10 @@ export default function FourOhFour() {
             </div>
           </div>
           <div className="mb-10 md:mb-20 text-white font-light">
-            <h1 className="font-black uppercase text-3xl lg:text-5xl text-[#CA4ECA] mb-10">You seem to be lost!</h1>
-            <p>Page is under construction</p>
-            <p>Use the Go Back button below.</p>
+            <h1 className="font-black uppercase text-3xl lg:text-5xl text-[#CA4ECA] mb-10">You are not lost!</h1>
+            <h3 className={"font-black uppercase text-xl lg:text-xl  mb-10"}>This page is under
+              construction</h3>
+            <p>Use the go back button below. </p>
           </div>
           <div className="mb-20 md:mb-0">
             <Link href={"/"}>

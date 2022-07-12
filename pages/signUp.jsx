@@ -48,8 +48,8 @@ export default function SignUp({ data }) {
                 <span className="text-lg text-blue-400 font-medium">Register Account</span>
                 <h2 className="mt-8 mb-12 text-5xl font-medium font-heading text-white">Start your journey by creating
                   an account.</h2>
-                <p className="text-lg text-gray-200"><span>The brown fox jumps over</span> <span
-                  className="text-white">the lazy dog.</span></p>
+                <p className="text-lg text-gray-200"><span>We will notify you at the start  </span> <span
+                  className="text-white">of the public beta.</span></p>
               </div>
             </div>
             <div className="w-full lg:w-1/2 px-4">
